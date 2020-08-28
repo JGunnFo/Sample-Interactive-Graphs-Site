@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { connect } from "react-redux";
+import { GOTO, goTo} from "./Actions";
+import { mainContentFrame } from "./subcomponents/topSection";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+class TopComponent extends React.Component {
+
+  renderTop() {
+    return(
+      <div>{mainContentFrame(this.props)}</div>
+    )
+  }
+
+
+
+  render() {
+    return (
+      <div className="Overall-Grid-Parent">
+      <div>{this.renderTop()}</div>
     </div>
+
   );
 }
+}
 
-export default App;
+
+function mapStateToProps(state) {
+  return {
+    section: state.section,
+    transition: state.transition
+  };
+}
+
+
+
+export default connect(mapStateToProps)(TopComponent);

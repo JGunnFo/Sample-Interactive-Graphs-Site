@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+/* --- Universal styles --- */ 
+
+root {
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+html {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.Default-Styling {
+  background: #121212;
+  margin: 8px;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: whitesmoke;
+
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  --default-height: 97vh;
+  --default-width: 90vw;
+
+
+  --secondary_color:#FFBF49;
+  --tertiary_color:#FD4855;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.Overall-Grid-Parent{
+  display: grid;
+  grid-template-rows: auto;
+  align-content: start;
+}
+
+.Mobile-View{
+  display: none;
+}
+
+
+
+/* ----- Top Section----- */ 
+
+
+
+
+.Main-Flex-Parent{
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 30rem;
+  font-size:1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+p{
+  line-height: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Large-View{
+  line-height: 2rem;
+}
+
+
+
+.As-Text {
+  background:none;
+  border:none;
+  cursor: pointer;   
+}
+
+
+
+
+
+@media (min-width:1400px) and (min-height: 850px){
+
+}
+
+
+@media (max-width:890px){
+
+
+
+}
+
+
+@media (min-width:760px) and (max-height: 530px){
+
+
+}
+
+
+@media (max-width:760px){
+
+
+
+}
+
+
+
+@media (max-width:460px){
+
+
+
+  .Large-View{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Mobile-View{
+    display: inline-block;
+    line-height: 1.4rem;
   }
+
 }
