@@ -2,13 +2,20 @@ import React from 'react';
 import './App.css';
 import { connect } from "react-redux";
 import { GOTO, goTo} from "./Actions";
-import { mainContentFrame } from "./subcomponents/topSection";
+import { mainContentFrame } from "./subcomponents/contentSection";
+import { navBar } from "./subcomponents/navSection";
 
 
 
 class TopComponent extends React.Component {
 
-  renderTop() {
+  renderNav(){
+    return(
+      <div>{navBar(this.props)}</div>
+    )
+  }
+
+  renderContent() {
     return(
       <div>{mainContentFrame(this.props)}</div>
     )
@@ -19,7 +26,8 @@ class TopComponent extends React.Component {
   render() {
     return (
       <div className="Overall-Grid-Parent">
-      <div>{this.renderTop()}</div>
+      <div>{this.renderNav()}</div>
+      <div>{this.renderContent()}</div>
     </div>
 
   );
@@ -30,7 +38,10 @@ class TopComponent extends React.Component {
 function mapStateToProps(state) {
   return {
     section: state.section,
-    transition: state.transition
+    transition: state.transition,
+    articles: state.articles,
+    currentArticle: state.currentArticle,
+    graphs: state.graphs
   };
 }
 
