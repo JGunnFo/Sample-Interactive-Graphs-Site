@@ -30,7 +30,7 @@ export function navBar(props){
     if (props.currentArticle){
         return(
       <div>
-      <div><button className={navStyle} onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
+      <div><button onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
       </div>
         )}
         else{
@@ -49,7 +49,7 @@ export function navBar(props){
 
     return(
       <div>
-      <div><button className={navStyle} onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
+      <div><button onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
       </div>
     );
   }

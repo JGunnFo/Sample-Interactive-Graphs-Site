@@ -1,7 +1,7 @@
 import {Articles, HTMLs, Graphs, Forms} from './articles';
 
 export const initialStateReducer={
-    section: "article",
+    section: "news",
     transition:false,
     articleList:Articles,
     currentArticle:["HTML3", "Graph1", "HTML2"],
@@ -12,7 +12,7 @@ export const initialStateReducer={
     graphList: Graphs,
     formList: Forms,
     HTMLList: HTMLs,
-    currentGraphs: [ ["Graph2","Graph2"], ["Graph2","Graph1"]]
+    currentGraphs: [ ["Graph2","Graph1"], ["Graph1","Graph2"]]
     /* current, origin. 0 is current, 1 is origin*/
 
   };

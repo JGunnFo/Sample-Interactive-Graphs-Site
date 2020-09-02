@@ -17,6 +17,26 @@ export const reducer = produce((draft=initialStateReducer, action) => {
       draft.section=action.payload;
       return draft;      
 
+    case "GRAPHCLICK":
+      if (draft.currentGraphs[action.payload[1]][0]==="Graph1"){
+        draft.currentGraphs[action.payload[1]][0]="Graph2" 
+        return draft;
+      }
+      if (draft.currentGraphs[action.payload[1]][0]==="Graph2"){
+        draft.currentGraphs[action.payload[1]][0]="Graph1"
+        return draft;
+      }
+
+    case "ARTICLECLICK":
+    draft.currentArticle=action.payload;
+    draft.section="Article";
+    return draft;
+
+    case "CHARTORIGIN":
+    draft.currentGraphs[action.payload][0]=draft.currentGraphs[action.payload][1]
+    return draft;
+
+
       default:
           return draft;
   }

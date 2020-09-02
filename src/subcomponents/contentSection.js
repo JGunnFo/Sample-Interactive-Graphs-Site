@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { connect } from "react-redux";
-import { GOTO, GoTo} from "../Actions";
+import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTORIGIN, ChartOrigin} from "../Actions";
 import { ResponsiveContainer, BarChart, Bar, Cell, Tooltip, Legend, LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
 
 
@@ -14,20 +14,20 @@ export function mainContentFrame(props){
 
   function selectContent(props){
 
-    if (props.section==="main"){
+    if (props.section==="Main"){
       return( 
         <div role="main">{sectionMain(props)}</div>
      )
       }
       
 
-    if (props.section==="news"){
+    if (props.section==="News"){
       return( 
         <div role="main">{sectionNews(props)}</div>
      )
       }
 
-    if (props.section==="article"){
+    if (props.section==="Article"){
       return( 
         <div role="main">{sectionArticle(props)}hey</div>
      )
@@ -62,19 +62,20 @@ could simplify with useselector or something..
     return(
       <div>
         {props.articleList.map(preview =>
-          (RenderSquares(preview))
+          (RenderSquares(preview, props))
           )}
       </div>
     )
 
   }
     
-  function RenderSquares(passedPreview){
+  function RenderSquares(passedPreview, props){
     return(
       <div>
       <div>{passedPreview["TitleText"]}</div>
       <div>{passedPreview["PreviewText"]}</div>
       <div>{passedPreview["Sections"]}</div>
+      <div><button onClick={() => {props.dispatch(ArticleClick(passedPreview["Sections"]))}}>expandthisclickarea</button></div>
       </div>
     )
   }
@@ -110,8 +111,9 @@ could simplify with useselector or something..
               graphNumber+=1
               return(
                 <div>
-                  {chartMaker(props.graphList[props.currentGraphs[graphNumber][0]])}
+                  {chartMaker(props.graphList[props.currentGraphs[graphNumber][0]], graphNumber, props)}
                   <div>hey its {graphNumber} let's revert!! </div>
+                  <div><button onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>start of graph pls</button></div>
                   </div>
               )
             }
@@ -140,7 +142,7 @@ could simplify with useselector or something..
 
 
 
-function chartMaker(graphInfo){
+function chartMaker(graphInfo, graphNumber, props){
 let graphData=graphInfo["data"]
 let key=graphInfo["key"]
 let title=graphInfo["title"]
@@ -154,7 +156,10 @@ let title=graphInfo["title"]
           <YAxis />
           <Tooltip />
           <Legend  verticalAlign="top"  />
-          <Bar dataKey={key} fill="#8884d8" 
+          <Bar dataKey={key} fill="#8884d8"
+          onClick = {(Bar) => {
+            props.dispatch(GraphClick(Bar, graphNumber))
+            }}
             />
         </BarChart>
         </ResponsiveContainer>
@@ -163,7 +168,3 @@ let title=graphInfo["title"]
   return renderChart
 }
 
-
-  function HTMLGrabber(props){
-
-  }
