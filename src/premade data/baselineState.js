@@ -4,7 +4,7 @@ export const initialStateReducer={
     section: "article",
     transition:false,
     articleList:Articles,
-    currentArticle:["Graph1","Graph2"],
+    currentArticle:["HTML3", "Graph1", "HTML2"],
     /*
     ^ie the HTMLGraphList
     v they use keys to get each
@@ -12,7 +12,7 @@ export const initialStateReducer={
     graphList: Graphs,
     formList: Forms,
     HTMLList: HTMLs,
-    currentGraphs: [ ["Graph1","Graph2"], ["Graph2","Graph1"]]
+    currentGraphs: [ ["Graph2","Graph2"], ["Graph2","Graph1"]]
     /* current, origin. 0 is current, 1 is origin*/
 
   };

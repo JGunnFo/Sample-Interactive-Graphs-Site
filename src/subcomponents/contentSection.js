@@ -71,7 +71,11 @@ could simplify with useselector or something..
     
   function RenderSquares(passedPreview){
     return(
-      <div>{JSON.stringify(passedPreview)}</div>
+      <div>
+      <div>{passedPreview["TitleText"]}</div>
+      <div>{passedPreview["PreviewText"]}</div>
+      <div>{passedPreview["Sections"]}</div>
+      </div>
     )
   }
 

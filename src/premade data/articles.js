@@ -16,7 +16,7 @@ const article1={
 };
     
 
-const HTML1 =  "<div>Click on any of the bars in the graph to view more of the data!</div>"
+const HTML1 =  <div>Click on any of the bars in the graph to view more of the data!</div>
 const Graph1 = {  
   data:[{name:"Horror", sales:400}, {name:"Action", sales:700}, {name:"Romance", sales:600}, {name:"Comedy", sales:650}, {name:"Drama", sales:550}], 
   title: "August Sales By Genre", 
@@ -24,7 +24,7 @@ const Graph1 = {
 };
 /*MAKE SURE this is correct either as array or as object idk whichever is approrpiate
 arrays vs objects..*/
-const HTML2 = "If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!"
+const HTML2 = <div className="Temporary-Test">If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!</div>
 
 
 
@@ -37,8 +37,11 @@ const article2={
     };
 
     
-const HTML3 = "<div>In October we will be holding preview screenings for 6 different upcoming movies! </div>"+
-"<div>Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!</div>";
+const HTML3 = <div><div className="Temporary-Test">In October we will be holding preview screenings for 6 
+different upcoming movies! </div>
+<div>Fill out the form below with the absolutely not fake email that you use for your 
+  Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, 
+  and we'll get back to you soon!</div></div>;
 
 /* be aware that this is a function, so theres a difference between Form1 and Form1(), reference vs call*/
 function Form1(){
