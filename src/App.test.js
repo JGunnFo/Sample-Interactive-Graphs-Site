@@ -5,7 +5,7 @@ import configureMockStore from 'redux-mock-store';
 import { Provider } from "react-redux";
 import { render } from '@testing-library/react';
 import TopComponent from './App';
-import {initialStateTest, initialStateTestAbout} from './baselineState';
+import {initialStateTest, initialStateTestAbout} from './premade data/baselineState';
 import ReactTestUtils from 'react-dom/test-utils'; // ES6
 
 

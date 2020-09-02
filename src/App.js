@@ -28,6 +28,18 @@ class TopComponent extends React.Component {
       <div className="Overall-Grid-Parent">
       <div>{this.renderNav()}</div>
       <div>{this.renderContent()}</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      {JSON.stringify(this.props.formList)}
+      <div>b</div>
+      {JSON.stringify(this.props.HTMLList)}
     </div>
 
   );
@@ -39,9 +51,12 @@ function mapStateToProps(state) {
   return {
     section: state.section,
     transition: state.transition,
-    articles: state.articles,
+    articleList: state.articleList,
     currentArticle: state.currentArticle,
-    graphs: state.graphs
+    graphList: state.graphList,
+    formList: state.formList,
+    HTMLList: state.HTMLList,
+    currentGraphs: state.currentGraphs
   };
 }
 
