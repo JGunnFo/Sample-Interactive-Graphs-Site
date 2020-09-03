@@ -28,9 +28,26 @@ export const reducer = produce((draft=initialStateReducer, action) => {
       }
 
     case "ARTICLECLICK":
+    draft.currentGraphs=[]
+
+    
+    {action.payload.map(section =>{
+    if (section[0]==="G"){
+      draft.currentGraphs.push([section, section])
+    }})}
+    /* section, section because its a list of lists, each [0] is current and each [1] is origin 
+    */
+
     draft.currentArticle=action.payload;
     draft.section="Article";
+    console.log(JSON.stringify(draft.currentGraphs))
     return draft;
+
+
+    /*
+    make sure the HTML1,Graph1, etc list and the currentGraphs are *lists* [] 
+    and not objects {} so that order is preserved
+    */
 
     case "CHARTORIGIN":
     draft.currentGraphs[action.payload][0]=draft.currentGraphs[action.payload][1]
