@@ -12,12 +12,12 @@ const article1={
     TitleText: "Interactive Data",
     PreviewText: "Ever wonder if horror movies are more popular than romance movies?  These August movie sales will tell the truth!",
     Date: new Date(2020, 9, 10),
-    Sections: ["HTML1", "Graph1", "HTML2"]
+    Sections: ["HTML1", "GraphArranged_Genres_August", "HTML2"]
 };
     
 
 const HTML1 =  <div>Click on any of the bars in the graph to view more of the data!</div>
-const Graph1 = {  
+const GraphArranged_Genres_August = {  
   data:[{name:"Horror", sales:400}, {name:"Action", sales:700}, {name:"Romance", sales:600}, {name:"Comedy", sales:650}, {name:"Drama", sales:550}], 
   title: "August Sales By Genre", 
   key: "sales" 
@@ -187,11 +187,6 @@ const article5={
     
     
 
-  const Graph2 = {  
-    data:[{name:"BEP", sales:400}, {name:"LEG", sales:700}, {name:"Romance", sales:600}, {name:"DAWI-ZHARR", sales:1650}, {name:"Drama", sales:550}], 
-    title: "WARLOCKS WITH GUNS", 
-    key: "sales" 
-  };
   
 
 
@@ -231,12 +226,308 @@ const article8={
   </div>;
     
 
+    const GraphGenre_Horror_August = {  
+      data:[{name:"The Nosferatu of Wall Street", sales:60}, 
+      {name:"Dead Universe", sales: 90}, 
+      {name:"Empty Woods", sales:100}, 
+      {name:"The New Jersey Folding Chair Massacre", sales:130}], 
+      title: "Horror Movie Sales in August", 
+      key: "sales" 
+    };
+
+
+    const GraphGenre_Action_August = {  
+      data:[{name:"Byrandel's Squadron", sales:250}, 
+      {name:"Explosionfest", sales: 100}, 
+      {name:"The Hero from the Forest", sales:110}, 
+      {name:"Large Robots", sales:125}, 
+      {name:"Dragons vs Dinosaurs", sales:120}], 
+      title: "Action Movie Sales in August", 
+      key: "sales" 
+    };
+
+
+
+
+    const GraphGenre_Romance_August = {  
+      data:[{name:"Outcasts In Love", sales:70}, 
+      {name:"Serene Nights", sales: 65}, 
+      {name:"Too Many Satyrs", sales:140}, 
+      {name:"Looking At Him", sales:80}, 
+      {name:"Seductive Merman", sales:200}], 
+      title: "Romance Movie Sales in August", 
+      key: "sales" 
+    };
+
+
+
+    const GraphGenre_Comedy_August = {  
+      data:[{name:"Rusty's Wedding", sales:240}, 
+      {name:"Little Salad Spinners", sales: 100}, 
+      {name:"One Shot To Go", sales:110}, 
+      {name:"Meet The Gorgon Family", sales:210}], 
+      title: "Comedy Movie Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphGenre_Drama_August = {  
+      data:[{name:"Steel and Light", sales:100}, 
+      {name:"Daniel Lighto", sales: 140}, 
+      {name:"The Baritones", sales:80}, 
+      {name:"Inara's Mind", sales:150}],
+      title: "Drama Movie Sales in August", 
+      key: "sales" 
+    };
+
+
+    const GraphMovie_Nosferatu_August = {  
+      data:[{name:"Week 1", sales:30}, 
+      {name:"Week 2", sales: 15}, 
+      {name:"Week 3", sales: 5}, 
+      {name:"Week 4", sales: 10}],
+      title: "The Nosferatu of Wall Street's Sales in August", 
+      key: "sales" 
+    };
+
+
+    const GraphMovie_Dead_August = {  
+      data:[{name:"Week 1", sales:30}, 
+      {name:"Week 2", sales: 40}, 
+      {name:"Week 3", sales: 10}, 
+      {name:"Week 4", sales: 10}],
+      title: "Dead Universe's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Empty_August = {  
+      data:[{name:"Week 1", sales:80}, 
+      {name:"Week 2", sales: 5}, 
+      {name:"Week 3", sales: 10}, 
+      {name:"Week 4", sales: 5}],
+      title: "Empty Woods's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Jersey_August = {  
+      data:[{name:"Week 1", sales:60}, 
+      {name:"Week 2", sales: 40}, 
+      {name:"Week 3", sales: 10}, 
+      {name:"Week 4", sales: 20}],
+      title: "The New Jersey Folding Chair Massacre's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Byrnadel_August = {  
+      data:[{name:"Week 1", sales:100}, 
+      {name:"Week 2", sales: 70}, 
+      {name:"Week 3", sales: 50}, 
+      {name:"Week 4", sales: 30}],
+      title: "Byrandel's Squadron's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Explosion_August = {  
+      data:[{name:"Week 1", sales:90}, 
+      {name:"Week 2", sales: 3}, 
+      {name:"Week 3", sales: 4}, 
+      {name:"Week 4", sales: 3}],
+      title: "Explosionfest's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Hero_August = {  
+      data:[{name:"Week 1", sales:30}, 
+      {name:"Week 2", sales: 50}, 
+      {name:"Week 3", sales: 20}, 
+      {name:"Week 4", sales: 10}],
+      title: "The Hero from the Forest's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Dragons_August = {  
+      data:[{name:"Week 1", sales:50}, 
+      {name:"Week 2", sales: 50}, 
+      {name:"Week 3", sales: 15}, 
+      {name:"Week 4", sales: 5}],
+      title: "Dragons vs Dinosaurs's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Robots_August = {  
+      data:[{name:"Week 1", sales:115}, 
+      {name:"Week 2", sales: 3}, 
+      {name:"Week 3", sales: 2}, 
+      {name:"Week 4", sales: 5}],
+      title: "Large Robots's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Outcasts_August = {  
+      data:[{name:"Week 1", sales:20}, 
+      {name:"Week 2", sales: 20}, 
+      {name:"Week 3", sales: 5}, 
+      {name:"Week 4", sales: 25}],
+      title: "Outcasts In Love's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Serene_August = {  
+      data:[{name:"Week 1", sales:45}, 
+      {name:"Week 2", sales: 2}, 
+      {name:"Week 3", sales: 3}, 
+      {name:"Week 4", sales: 15}],
+      title: "Serene Nights's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Satyrs_August = {  
+      data:[{name:"Week 1", sales:50}, 
+      {name:"Week 2", sales:  50}, 
+      {name:"Week 3", sales: 20}, 
+      {name:"Week 4", sales: 20}],
+      title: "Too Many Satyrs's Sales in August", 
+      key: "sales" 
+    };
+
+
+    const GraphMovie_Looking_August = {  
+      data:[{name:"Week 1", sales:70}, 
+      {name:"Week 2", sales: 2}, 
+      {name:"Week 3", sales: 1}, 
+      {name:"Week 4", sales: 7}],
+      title: "Looking At Him's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Merman_August = {  
+      data:[{name:"Week 1", sales: 40}, 
+      {name:"Week 2", sales: 40}, 
+      {name:"Week 3", sales: 50}, 
+      {name:"Week 4", sales: 70}],
+      title: "Seductive Merman's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Rusty_August = {  
+      data:[{name:"Week 1", sales:100}, 
+      {name:"Week 2", sales: 70}, 
+      {name:"Week 3", sales: 10}, 
+      {name:"Week 4", sales: 60}],
+      title: "Rusty's Wedding's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Salad_August = {  
+      data:[{name:"Week 1", sales:20}, 
+      {name:"Week 2", sales: 20}, 
+      {name:"Week 3", sales: 20}, 
+      {name:"Week 4", sales: 40}],
+      title: "Little Salad Spinners's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_OneShot_August = {  
+      data:[{name:"Week 1", sales: 40}, 
+      {name:"Week 2", sales:  30}, 
+      {name:"Week 3", sales: 10}, 
+      {name:"Week 4", sales: 30}],
+      title: "One Shot To Go's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Gorgon_August = {  
+      data:[{name:"Week 1", sales:60}, 
+      {name:"Week 2", sales: 100}, 
+      {name:"Week 3", sales: 30}, 
+      {name:"Week 4", sales: 20}],
+      title: "Meet The Gorgon Family's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Steel_August = {  
+      data:[{name:"Week 1", sales: 60}, 
+      {name:"Week 2", sales:  10}, 
+      {name:"Week 3", sales: 15}, 
+      {name:"Week 4", sales: 15}],
+      title: "Steel and Light's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Daniel_August = {  
+      data:[{name:"Week 1", sales:40}, 
+      {name:"Week 2", sales: 30}, 
+      {name:"Week 3", sales: 30}, 
+      {name:"Week 4", sales: 40}],
+      title: "Daniel Lighto's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Baritones_August = {  
+      data:[{name:"Week 1", sales: 20}, 
+      {name:"Week 2", sales: 20}, 
+      {name:"Week 3", sales: 20}, 
+      {name:"Week 4", sales: 20}],
+      title: "The Baritones's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphMovie_Inara_August = {  
+      data:[{name:"Week 1", sales: 30}, 
+      {name:"Week 2", sales: 30}, 
+      {name:"Week 3", sales: 40}, 
+      {name:"Week 4", sales: 50}],
+      title: "Inara's Mind's Sales in August", 
+      key: "sales" 
+    };
+
+    const GraphDate_Week1_August = {  
+      data:[{name:"Horror", sales:150}, 
+      {name:"Action", sales: 350}, 
+      {name:"Romance", sales:150}, 
+      {name:"Comedy", sales:120},
+      {name:"Drama", sales: 100}],
+      title: "Week 1 of August's Movie Sales by Genre", 
+      key: "sales" 
+    };
+
+    const GraphDate_Week2_August = {  
+      data:[{name:"Horror", sales:70}, 
+      {name:"Action", sales: 150}, 
+      {name:"Romance", sales:250}, 
+      {name:"Comedy", sales: 300},
+      {name:"Drama", sales: 100}],
+      title: "Week 2 of August's Movie Sales by Genre", 
+      key: "sales" 
+    };
+
+    const GraphDate_Week3_August = {  
+      data:[{name:"Horror", sales:80}, 
+      {name:"Action", sales: 100}, 
+      {name:"Romance", sales: 100}, 
+      {name:"Comedy", sales:120},
+      {name:"Drama", sales: 150}],
+      title: "Week 3 of August's Movie Sales by Genre", 
+      key: "sales" 
+    };
+
+    const GraphDate_Week4_August = {  
+      data:[{name:"Horror", sales:100}, 
+      {name:"Action", sales: 100}, 
+      {name:"Romance", sales:100}, 
+      {name:"Comedy", sales:110},
+      {name:"Drama", sales: 200}],
+      title: "Week 4 of August's Movie Sales by Genre", 
+      key: "sales" 
+    };
+
+
 let preSortArticles=[article1, article2, article3, article4, article5, article6, article7, article8]
 
 
+export let  movieNameGraphPairs=[["The Nosferatu of Wall Street","GraphMovie_Nosferatu_August"],["Dead Universe","GraphMovie_Dead_August"],["Empty Woods","GraphMovie_Empty_August"],["The New Jersey Folding Chair Massacre","GraphMovie_Jersey_August"],["Byrandel's Squadron","GraphMovie_Byrnadel_August"],["Explosionfest","GraphMovie_Explosion_August"],["The Hero from the Forest","GraphMovie_Hero_August"],["Large Robots","GraphMovie_Robots_August"],["Dragons vs Dinosaurs","GraphMovie_Dragons_August"],["Outcasts In Love","GraphMovie_Outcasts_August"],["Serene Nights","GraphMovie_Serene_August"],["Too Many Satyrs","GraphMovie_Satyrs_August"],["Looking At Him","GraphMovie_Looking_August"],["Seductive Merman","GraphMovie_Merman_August"],["Rusty's Wedding","GraphMovie_Rusty_August"],["Little Salad Spinners","GraphMovie_Salad_August"],["One Shot To Go","GraphMovie_OneShot_August"],["Meet The Gorgon Family","GraphMovie_Gorgon_August"],["Steel and Light","GraphMovie_Steel_August"],["Daniel Lighto","GraphMovie_Daniel_August"],["The Baritones","GraphMovie_Baritones_August"],["Inara's Mind","GraphMovie_Inara_August"]]
 export let Articles=preSortArticles.sort(function(b,a){return a.Date.getTime() - b.Date.getTime()});
 export let HTMLs={"HTML1":HTML1, "HTML2":HTML2, "HTML3":HTML3, "HTML4":HTML4, "HTML5":HTML5, "HTML6":HTML6, "HTML7":HTML7, "HTML8":HTML8, "HTML9":HTML9}
-export let Graphs={"Graph1":Graph1, "Graph2":Graph2}
+export let Graphs={"GraphArranged_Genres_August":GraphArranged_Genres_August, "GraphGenre_Horror_August":GraphGenre_Horror_August,"GraphGenre_Action_August":GraphGenre_Action_August,"GraphGenre_Romance_August":GraphGenre_Romance_August,"GraphGenre_Comedy_August":GraphGenre_Comedy_August,"GraphGenre_Drama_August":GraphGenre_Drama_August,"GraphMovie_Nosferatu_August":GraphMovie_Nosferatu_August,"GraphMovie_Dead_August":GraphMovie_Dead_August,"GraphMovie_Empty_August":GraphMovie_Empty_August,"GraphMovie_Jersey_August":GraphMovie_Jersey_August,"GraphMovie_Byrnadel_August":GraphMovie_Byrnadel_August,"GraphMovie_Explosion_August":GraphMovie_Explosion_August,"GraphMovie_Hero_August":GraphMovie_Hero_August,"GraphMovie_Dragons_August":GraphMovie_Dragons_August,"GraphMovie_Robots_August":GraphMovie_Robots_August,"GraphMovie_Outcasts_August":GraphMovie_Outcasts_August,"GraphMovie_Serene_August":GraphMovie_Serene_August,"GraphMovie_Satyrs_August":GraphMovie_Satyrs_August,"GraphMovie_Looking_August":GraphMovie_Looking_August,"GraphMovie_Merman_August":GraphMovie_Merman_August,"GraphMovie_Rusty_August":GraphMovie_Rusty_August,"GraphMovie_Salad_August":GraphMovie_Salad_August,"GraphMovie_OneShot_August":GraphMovie_OneShot_August,"GraphMovie_Gorgon_August":GraphMovie_Gorgon_August,"GraphMovie_Steel_August":GraphMovie_Steel_August,"GraphMovie_Daniel_August":GraphMovie_Daniel_August,"GraphMovie_Baritones_August":GraphMovie_Baritones_August,"GraphMovie_Inara_August":GraphMovie_Inara_August,"GraphDate_Week1_August":GraphDate_Week1_August,"GraphDate_Week2_August":GraphDate_Week2_August,"GraphDate_Week3_August":GraphDate_Week3_August,"GraphDate_Week4_August":GraphDate_Week4_August}
 export let Forms=[Form1()]
 
 

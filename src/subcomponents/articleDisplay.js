@@ -33,7 +33,7 @@ export  function sectionArticle(props){
                 <div>
                   {chartMaker(props.graphList[props.currentGraphs[graphNumber][0]], graphNumber, props)}
                   <div>hey its {graphNumber} let's revert!! </div>
-                  <div><button onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>start of graph pls</button></div>
+                  <div><button onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>start of graph pls mr #{graphNumber}</button></div>
                   </div>
               )
             }
