@@ -16,21 +16,26 @@ export  function sectionArticle(props){
   }
   
     
+
+
   function ReadArticleData(props){
     let contents=props.currentArticle
-    let graphNumber=-1
+    let graphNumberOverall=-1
     return(
       <div>
-      {contents.map(section =>{
+      {contents.map((section,index) =>{
             if (section[0]==="H"){
               return(
-                <div>{props.HTMLList[section]}</div>
+                <div key={index}>{props.HTMLList[section]}
+                ok so this is H {index}</div>
               )
             }
             if (section[0]==="G"){
-              graphNumber+=1
+              graphNumberOverall+=1
+              let graphNumber=graphNumberOverall
               return(
-                <div>
+                <div key={index}>
+                  ok so this is G {index}
                   {chartMaker(props.graphList[props.currentGraphs[graphNumber][0]], graphNumber, props)}
                   <div>hey its {graphNumber} let's revert!! </div>
                   <div><button onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>start of graph pls mr #{graphNumber}</button></div>
@@ -59,6 +64,7 @@ export  function sectionArticle(props){
   but for now, leaving it this awy
   ^eh, dont want another "leaving it htis way" comment, but not for myself at least that those are hte concenrs
   */
+
 
 
 

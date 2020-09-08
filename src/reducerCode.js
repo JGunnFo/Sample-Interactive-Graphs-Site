@@ -30,23 +30,7 @@ function GenreClicked(barName){
 
 function MovieClicked(barName){
 
-  let result="h"
-  console.log("WE GOT SOMETHIN??")
-  console.log(barName)
-  movieNameGraphPairs.map(pair =>{
-    console.log(JSON.stringify(pair))
-    console.log("CHECKING FOR PAIR...")
-    if (barName===pair[0]){
-      console.log("WE GOT A PAIR")
-      console.log(pair[1])
-      console.log("vs")
-      console.log("GraphMovie_Byrnadel_August")
-      return(pair[1]);
-    }
-    return;
-  })
-  return;
-    
+  return movieNameGraphPairs[barName];
 }
 
 function WeekClicked(barName){
@@ -141,6 +125,7 @@ export const reducer = produce((draft=initialStateReducer, action) => {
 
     case "CHARTORIGIN":
       console.log("CHARTORIGIN IS BEING RUN")
+      console.log(action.payload)
     draft.currentGraphs[action.payload][0]=draft.currentGraphs[action.payload][1]
     return draft;
 
