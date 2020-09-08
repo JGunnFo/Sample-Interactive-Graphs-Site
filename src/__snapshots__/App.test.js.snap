@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly according to snapshot 1`] = `
+<div
+  className="Overall-Grid-Parent"
+>
+  <div>
+    <div>
+      <div
+        className="Nav-Flex-Parent"
+        role="navigation"
+      >
+        <div>
+          <div>
+            <button
+              onClick={[Function]}
+            >
+              News
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <button
+              onClick={[Function]}
+            >
+              Article
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <button
+              onClick={[Function]}
+            >
+              About
+            </button>
+          </div>
+        </div>
+        <div
+          className="Nav-Unselected"
+        >
+          <a>
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div
+          role="main"
+        >
+          <div
+            className="Main-Flex-Parent"
+          >
+            <div>
+              <div>
+                <div>
+                  <div>
+                    Interactive Data
+                  </div>
+                  <div>
+                    Ever wonder if horror movies are more popular than romance movies?  These August movie sales will tell the truth!
+                  </div>
+                  <div>
+                    HTML1
+                    GraphArranged_Genres_August
+                    HTML2
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    Sign up for a special screening!
+                  </div>
+                  <div>
+                    If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!
+                  </div>
+                  <div>
+                    HTML3
+                    Form1
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    Updated Rules on Bringing Pets
+                  </div>
+                  <div>
+                    If you want to bring your alpaca along, be sure to read these rules to save your movie night!
+                  </div>
+                  <div>
+                    HTML5
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    30% off Tickets on September 5th!
+                  </div>
+                  <div>
+                    What could be better than cheap movies on the weekend?
+                  </div>
+                  <div>
+                    HTML4
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    Several 1970s movies available!
+                  </div>
+                  <div>
+                    We've added a lot of 1970s classics to our digital library!
+                  </div>
+                  <div>
+                    HTML6
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    Horror Week Sale!
+                  </div>
+                  <div>
+                    For horror week, you can save big! Click here to find out more!
+                  </div>
+                  <div>
+                    HTML7
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    T-Shirts with your favorite brand!
+                  </div>
+                  <div>
+                    You love us, right? Then wear a t-shirt with our logo on it! You'll get a ticket discount!
+                  </div>
+                  <div>
+                    HTML8
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    Staff Changes
+                  </div>
+                  <div>
+                    We've got some new hires, and some staff relocating.
+                  </div>
+                  <div>
+                    HTML9
+                  </div>
+                  <div>
+                    <button
+                      onClick={[Function]}
+                    >
+                      expandthisclickarea
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

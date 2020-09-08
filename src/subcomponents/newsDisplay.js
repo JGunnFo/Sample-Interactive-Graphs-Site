@@ -15,17 +15,17 @@ export  function sectionNews(props){
   function LoopOverNews(props){
     return(
       <div>
-        {props.articleList.map(preview =>
-          (RenderSquares(preview, props))
+        {props.articleList.map((preview, index) =>
+          (RenderSquares(preview, props, index))
           )}
       </div>
     )
 
   }
     
-  function RenderSquares(passedPreview, props){
+  function RenderSquares(passedPreview, props, index){
     return(
-      <div>
+      <div key={index}>
       <div>{passedPreview["TitleText"]}</div>
       <div>{passedPreview["PreviewText"]}</div>
       <div>{passedPreview["Sections"]}</div>
