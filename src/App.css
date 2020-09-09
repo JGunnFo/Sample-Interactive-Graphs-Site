@@ -10,7 +10,6 @@ html {
 }
 
 
-
 .Default-Styling {
   background: #121212;
   margin: 8px;
@@ -52,6 +51,22 @@ html {
 /* ----- Top Section----- */ 
 
 
+
+
+.Nav-Flex-Parent{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 3rem;
+  width: 100vw;
+  font-size:1.5rem;
+  background: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
 
 
 .Main-Flex-Parent{

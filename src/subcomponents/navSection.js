@@ -7,12 +7,13 @@ import { GOTO, GoTo} from "../Actions";
 
 export function navBar(props){
     return(
+      <div className="Sticky-Nav-Container">
       <div className="Nav-Flex-Parent" role="navigation">
-      {navBarButton("News", props)}
-      {navBarButton("Article", props)}
-      {navBarButton("About", props)}
-      {navBarButton("Github", props)}
-      </div>
+      <div>{navBarButton("News", props)}</div>
+      <div>{navBarButton("Article", props)}</div>
+      <div>{navBarButton("About", props)}</div>
+      <div>{navBarButton("Github", props)}</div>
+      </div></div>
     );
   }
 
