@@ -7,7 +7,7 @@ import { GOTO, GoTo} from "../Actions";
 
 export function navBar(props){
     return(
-      <div className="Sticky-Nav-Container">
+      <div>
       <div className="Nav-Flex-Parent" role="navigation">
       <div>{navBarButton("News", props)}</div>
       <div>{navBarButton("Article", props)}</div>

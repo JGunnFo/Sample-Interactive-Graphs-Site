@@ -14,7 +14,7 @@ export  function sectionNews(props){
   
   function LoopOverNews(props){
     return(
-      <div className="Main-Flex-Parent">
+      <div className="News-Grid-Parent">
         {props.articleList.map((preview, index) =>
           (RenderSquares(preview, props, index))
           )}

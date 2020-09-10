@@ -25,7 +25,7 @@ class TopComponent extends React.Component {
 
   render() {
     return (
-      <div className="Overall-Grid-Parent">
+      <div className="Overall-Parent">
       <div>{this.renderNav()}</div>
       <div>{this.renderContent()}</div>
     </div>
