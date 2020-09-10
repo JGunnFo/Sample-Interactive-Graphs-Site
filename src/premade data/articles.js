@@ -9,7 +9,7 @@ especially because that makes traversal across a series of graphs more legible
 */
 
 const article1={
-    TitleText: "Interactive Data",
+    TitleText: "Interactive Data Looooong Title Long Title Long Title Long Title Long title",
     PreviewText: "Ever wonder if horror movies are more popular than romance movies?  These August movie sales will tell the truth!",
     Date: new Date(2020, 9, 10),
     Sections: ["HTML1", "GraphArranged_Genres_August", "HTML2"]

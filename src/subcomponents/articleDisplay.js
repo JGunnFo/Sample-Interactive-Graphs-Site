@@ -8,7 +8,7 @@ import { ResponsiveContainer, BarChart, Bar, Cell, Tooltip, Legend, LineChart, L
   
 export  function sectionArticle(props){
     return(
-      <div className="Main-Flex-Parent">
+      <div className="Article-Parent">
           <div>{ReadArticleData(props)}</div>
           <div>example text 2</div>
       </div>

@@ -6,7 +6,7 @@ import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTOR
     
 export  function sectionNews(props){
     return(
-      <div className="Main-Flex-Parent">
+      <div>
           <div>{LoopOverNews(props)}</div>
       </div>
     );
@@ -14,7 +14,7 @@ export  function sectionNews(props){
   
   function LoopOverNews(props){
     return(
-      <div>
+      <div className="Main-Flex-Parent">
         {props.articleList.map((preview, index) =>
           (RenderSquares(preview, props, index))
           )}
@@ -25,11 +25,11 @@ export  function sectionNews(props){
     
   function RenderSquares(passedPreview, props, index){
     return(
-      <div key={index}>
-      <div>{passedPreview["TitleText"]}</div>
-      <div>{passedPreview["PreviewText"]}</div>
-      <div>{passedPreview["Sections"]}</div>
-      <div><button onClick={() => {props.dispatch(ArticleClick(passedPreview["Sections"]))}}>expandthisclickarea</button></div>
+      <div key={index} className="News-Square">
+      <button className="Button-Unset" onClick={() => {props.dispatch(ArticleClick(passedPreview["Sections"]))}}>
+      <div className="News-Title-Text">{passedPreview["TitleText"]}</div>
+      <div className="News-Preview-Text" >{passedPreview["PreviewText"]}</div>
+      </button>
       </div>
     )
   }

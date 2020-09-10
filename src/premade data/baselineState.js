@@ -1,7 +1,7 @@
 import {Articles, HTMLs, Graphs, Forms} from './articles';
 
 export const initialStateReducer={
-    section: "Article",
+    section: "News",
     transition:false,
     articleList:Articles,
     currentArticle:["HTML3", "GraphArranged_Genres_August", "HTML2", "GraphDate_Week2_August", "GraphArranged_Genres_August"],

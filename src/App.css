@@ -11,12 +11,12 @@ html {
 
 
 .Default-Styling {
-  background: #121212;
+  background: #eeecec;
   margin: 8px;
 
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  color: whitesmoke;
+  color: rgb(110, 110, 110);
 
   
   -webkit-font-smoothing: antialiased;
@@ -35,11 +35,10 @@ html {
 
 
 
-
 .Overall-Grid-Parent{
-  display: grid;
-  grid-template-rows: auto;
   align-content: start;
+  margin-top: 4.5rem;
+  margin-right: 1.5rem;
 }
 
 .Mobile-View{
@@ -60,7 +59,7 @@ html {
   height: 3rem;
   width: 100vw;
   font-size:1.5rem;
-  background: grey;
+  background: #121212;
   position: fixed;
   top: 0;
   left: 0;
@@ -70,13 +69,47 @@ html {
 
 
 .Main-Flex-Parent{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  height: 70rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   font-size:1.5rem;
+  gap: 3rem;
 }
 
+.Button-Unset{
+  all: unset;
+  cursor: pointer;
+}
+
+.Button-Unset:hover{
+  color: purple;
+}
+
+.Button-Unset:visited{
+  color: purple;
+}
+
+.News-Square{
+  color: blue;
+  border-left: 3px solid gray;
+  border-bottom: 3px solid gray;
+  border-radius: 2px;
+  padding-left: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.News-Title-Text{
+  text-decoration: underline;
+}
+
+.News-Preview-Text{
+  padding-top: .5rem;
+  font-size: 1rem;
+}
+
+/*
+No size restriction such as hiding overflow etc, 
+relying on character limits for the content to prevent overflow issues.
+*/
 
 .Temporary-Test{
   color: blue;
