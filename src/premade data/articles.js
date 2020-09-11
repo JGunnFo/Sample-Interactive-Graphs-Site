@@ -240,8 +240,8 @@ const article8={
       data:[{name:"Byrandel's Squadron", sales:250}, 
       {name:"Explosionfest", sales: 100}, 
       {name:"The Hero from the Forest", sales:110}, 
-      {name:"Large Robots", sales:125}, 
-      {name:"Dragons vs Dinosaurs", sales:120}], 
+      {name:"Dragons vs Dinosaurs", sales:120},
+      {name:"Large Robots", sales:125} ], 
       title: "Action Movie Sales in August", 
       key: "sales" 
     };

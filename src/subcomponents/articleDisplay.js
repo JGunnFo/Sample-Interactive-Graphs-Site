@@ -74,15 +74,16 @@ let key=graphInfo["key"]
 let title=graphInfo["title"]
 
   const renderChart = (
-    <ResponsiveContainer  width="70%" height={300} >
-    <BarChart data={graphData}>
+    <ResponsiveContainer  width="99%" height={400} >
+    <BarChart data={graphData}  margin={{ bottom: 80,        }}>
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" label={{ value: title, angle: -30, offset: 10, position: 'insideLeft', stroke:"yellow" }}/>
+          <XAxis dataKey="name"  interval={2} angle={0}/>
+          <XAxis dataKey="name" axisLine={false} tickLine={false} interval={3}  height={1}  xAxisId="quarter" />
           <YAxis />
           <Tooltip />
           <Legend  verticalAlign="top"  />
-          <Bar dataKey={key} fill="#8884d8"
+          <Bar dataKey={key} fill="#8884d8" label={{ dataKey:"name", position: 'inside', pointerEvents: 'none' }}
           onClick = {(Bar) => {
             props.dispatch(GraphClick(Bar, graphNumber))
             }}
@@ -91,6 +92,11 @@ let title=graphInfo["title"]
         </ResponsiveContainer>
   );
 
-  return renderChart
+  return (
+    <div>
+    <div>{title}</div>
+    <div>{renderChart}</div>
+    </div>
+  )
 }
 

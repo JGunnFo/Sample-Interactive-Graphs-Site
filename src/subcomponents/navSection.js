@@ -24,33 +24,33 @@ export function navBar(props){
     if (props.section===passTo){
       navStyle="Nav-Selected"
     } else {
-      navStyle="Nav-Unselected"
+      navStyle=""
     }
  
     if (passTo==="Article"){
     if (props.currentArticle){
         return(
-      <div>
-      <div><button onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
+      <div className={navStyle}>
+      <div><button className="Button-Unset" onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
       </div>
         )}
         else{
             return;
-            /* remember this way of exiting retursn undefined, if that matters */
+            /* remember this way of exiting returns undefined, if that matters */
         }
     }
 
     if (passTo==="Github"){
       return(
-      <div className={navStyle}>
-      <a>Github</a>
+      <div>
+      <a className="Nav-Link" href="https://github.com/JGunnFnnno?tab=repositories" aria-label="Github Link">Github</a>
       </div>
       )
     }
 
     return(
-      <div>
-      <div><button onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
+      <div className={navStyle}>
+      <div><button className="Button-Unset" onClick={() => {props.dispatch(GoTo(passTo))}}>{passTo}</button></div>
       </div>
     );
   }
