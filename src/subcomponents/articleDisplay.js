@@ -70,7 +70,7 @@ class CustomizedAxisTick extends React.Component {
   render () {
     const {x, y, payload} = this.props;
 		
-   	return <Text className="Graph-X-Axis" x={x} y={y} width={75} textAnchor="middle"   verticalAnchor="start">{payload.value}</Text>
+   	return <Text className="Graph-X-Axis" x={x} y={y} width={75}  textAnchor="middle"   verticalAnchor="start">{payload.value}</Text>
   }
 };
 
@@ -80,14 +80,16 @@ let key=graphInfo["key"]
 let title=graphInfo["title"]
 
   const renderChart = (
-    <ResponsiveContainer  width="100%" height={400} >
+    <ResponsiveContainer  width="99%" height={400}  >
     <BarChart data={graphData}  >
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" interval={0}   tick={<CustomizedAxisTick />} />
+          <XAxis dataKey="name" interval={0}   tick={<CustomizedAxisTick />} height={50} />    
+      {/* Ideally the height would be defined via REM in css, but so far it seems that
+      due to how recharts responsive container works, that may not be possible. 
+      Display costs with this size setting are minimal, thankfully.*/}
     <YAxis width={30} />
           <Tooltip />
-          <Legend  verticalAlign="top"  />
           <Bar dataKey={key} fill="#8884d8"  
           onClick = {(Bar) => {
             props.dispatch(GraphClick(Bar, graphNumber))
@@ -100,8 +102,8 @@ let title=graphInfo["title"]
 
   return (
     <div>
-    <div>{title}</div>
-    <div>{renderChart}</div>
+    <div className="Graph-Title">{title}</div>
+    <div className="Graph-Itself">{renderChart}</div>
     </div>
   )
 }
