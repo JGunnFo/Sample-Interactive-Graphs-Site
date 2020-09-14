@@ -38,7 +38,7 @@ html {
 .Overall-Parent{
   align-content: start;
   margin-top: 4.5rem;
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .Mobile-View{
@@ -152,6 +152,14 @@ p{
 }
 
 
+.Graph-X-Axis{
+  font-size: 1rem;
+}
+
+.recharts-cartesian-axis-ticks{
+  font-size: .7rem;
+}
+
 @media (min-width:1400px) and (min-height: 850px){
 
 }
@@ -170,8 +178,11 @@ p{
 }
 
 
-@media (max-width:760px){
+@media (max-width:500px){
 
+  .Graph-X-Axis{
+    font-size: 0.63rem;
+  }
 
 
 }

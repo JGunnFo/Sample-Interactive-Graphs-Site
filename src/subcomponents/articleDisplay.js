@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { connect } from "react-redux";
 import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTORIGIN, ChartOrigin} from "../Actions";
-import { ResponsiveContainer, BarChart, Bar, Cell, Tooltip, Legend, LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import { ResponsiveContainer, BarChart, Bar, Cell, Tooltip, Legend, LineChart, Line, CartesianGrid, XAxis, YAxis, Text, LabelList } from 'recharts';
 
 
   
@@ -66,7 +66,13 @@ export  function sectionArticle(props){
   */
 
 
-
+class CustomizedAxisTick extends React.Component {
+  render () {
+    const {x, y, payload} = this.props;
+		
+   	return <Text className="Graph-X-Axis" x={x} y={y} width={75} textAnchor="middle"   verticalAnchor="start">{payload.value}</Text>
+  }
+};
 
 function chartMaker(graphInfo, graphNumber, props){
 let graphData=graphInfo["data"]
@@ -74,20 +80,20 @@ let key=graphInfo["key"]
 let title=graphInfo["title"]
 
   const renderChart = (
-    <ResponsiveContainer  width="99%" height={400} >
-    <BarChart data={graphData}  margin={{ bottom: 80,        }}>
+    <ResponsiveContainer  width="100%" height={400} >
+    <BarChart data={graphData}  >
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name"  interval={2} angle={0}/>
-          <XAxis dataKey="name" axisLine={false} tickLine={false} interval={3}  height={1}  xAxisId="quarter" />
-          <YAxis />
+          <XAxis dataKey="name" interval={0}   tick={<CustomizedAxisTick />} />
+    <YAxis width={30} />
           <Tooltip />
           <Legend  verticalAlign="top"  />
-          <Bar dataKey={key} fill="#8884d8" label={{ dataKey:"name", position: 'inside', pointerEvents: 'none' }}
+          <Bar dataKey={key} fill="#8884d8"  
           onClick = {(Bar) => {
             props.dispatch(GraphClick(Bar, graphNumber))
-            }}
-            />
+            }}>
+              <LabelList dataKey="sales" position="insideTop" />
+            </Bar>
         </BarChart>
         </ResponsiveContainer>
   );
