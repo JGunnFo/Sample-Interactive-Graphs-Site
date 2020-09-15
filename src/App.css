@@ -121,15 +121,30 @@ color its underline on hover as well, unlike the other navbar elements.
   gap: 4rem;
 }
 
+
+/*
+Would use unset itself, but it causes issues with IOS safari in some cases.
+*/
 .Button-Unset{
-  all: unset;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  display: block;
+  text-align: left;
+
   cursor: pointer;
   height: 100%;
   width: 100%;
-
+  -moz-appearance: none;
+-webkit-appearance: none;
 }
 
-.News-Stuff{
+.BLUESTUFF{
+  color:blue;
 }
 
 .Button-Unset:hover{
@@ -154,6 +169,12 @@ color its underline on hover as well, unlike the other navbar elements.
   padding-bottom: 0.8rem;
 }
 
+
+.News-Square:hover{
+  color:purple;
+}
+
+
 .News-Title-Text{
   text-decoration: underline;
 }
@@ -170,10 +191,6 @@ No size restriction such as hiding overflow etc,
 relying on character limits for the content to prevent overflow issues.
 */
 
-.Temporary-Test{
-  color: blue;
-  font-size: 0.8rem;
-}
 
 
 p{
