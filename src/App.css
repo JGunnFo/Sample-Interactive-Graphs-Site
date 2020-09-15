@@ -30,6 +30,10 @@ html {
 
   --secondary_color:#FFBF49;
   --tertiary_color:#FD4855;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
 
 }
 
@@ -119,6 +123,8 @@ color its underline on hover as well, unlike the other navbar elements.
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   font-size:1.5rem;
   gap: 4rem;
+  margin-left: 0.25rem;
+  margin-right: 0.5rem;
 }
 
 
@@ -139,13 +145,8 @@ Would use unset itself, but it causes issues with IOS safari in some cases.
   cursor: pointer;
   height: 100%;
   width: 100%;
-  -moz-appearance: none;
--webkit-appearance: none;
 }
 
-.BLUESTUFF{
-  color:blue;
-}
 
 .Button-Unset:hover{
   color: purple;
@@ -159,14 +160,17 @@ Would use unset itself, but it causes issues with IOS safari in some cases.
   display: grid;
   align-content: space-around;
   align-items: end;
-  color: blue;
+  color: rgb(14, 14, 196);
   height: 100%;
   width: 100%;
-  border-left: 3px solid gray;
-  border-bottom: 3px solid gray;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
   border-radius: 2px;
   padding-left: 0.8rem;
   padding-bottom: 0.8rem;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  border-radius: 2px;
 }
 
 
@@ -181,8 +185,10 @@ Would use unset itself, but it causes issues with IOS safari in some cases.
 
 .News-Preview-Text{
   color: #121212;
-  padding-top: .5rem;
+  padding-top: .75rem;
   font-size: 1rem;
+  line-height: 1.25rem;
+  
 }
 
 
@@ -240,6 +246,7 @@ p{
   border-right: 0rem;
   border-bottom: 0.24rem solid gray;
   border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.2);
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.2);
 
 
@@ -288,17 +295,6 @@ Centering in this way because recharts has some bad interactions with flex/grid 
 }
 
 
-@media (max-width:890px){
-
-
-
-}
-
-
-@media (min-width:760px) and (max-height: 530px){
-
-
-}
 
 
 @media (max-width:500px){

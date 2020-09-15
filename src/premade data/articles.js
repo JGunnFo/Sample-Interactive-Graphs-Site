@@ -9,7 +9,7 @@ especially because that makes traversal across a series of graphs more legible
 */
 
 const article1={
-    TitleText: "Interactive Data Looooong Title Long Title Long Title Long Title Long title",
+    TitleText: "Interactive Data",
     PreviewText: "Ever wonder if horror movies are more popular than romance movies?  These August movie sales will tell the truth!",
     Date: new Date(2020, 9, 10),
     Sections: ["HTML1", "GraphArranged_Genres_August", "HTML2"]
@@ -143,7 +143,7 @@ const article4={
   
     
 const HTML5 = <div><div>Here at Fictional Movie Business, we've gone to great extents to allow people to bring all of their pets to our theaters, including immense effort to install animal-only areas and to provide trained staff to make sure nothing goes wrong. We love to see all your dogs, cats, lizards, alpacas, ferrets, and everything else!</div>
-<div>However, for you to have a safe and pleasant moviegoing experience, we have added 3 new rules:</div>
+<div><br></br>However, for you to have a safe and pleasant moviegoing experience, we have added 3 new rules:</div>
 <div>-All animals must be at least a year old, so that they have any hope of obeying rules.</div>
 <div>-If the movie is 3 hours or longer, you must bring snacks for our staff to feed to your pet.</div>
 <div>-No leash, no service.</div></div>;
