@@ -23,7 +23,7 @@ export function mainContentFrame(props){
 
     if (props.section==="Article"){
       return( 
-        <div role="main">{sectionArticle(props)}hey</div>
+        <div role="main">{sectionArticle(props)}</div>
      )
       }
   

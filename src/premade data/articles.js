@@ -24,7 +24,7 @@ const GraphArranged_Genres_August = {
 };
 /*MAKE SURE this is correct either as array or as object idk whichever is approrpiate
 arrays vs objects..*/
-const HTML2 = <div className="Temporary-Test">If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!</div>
+const HTML2 = <div>If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!</div>
 
 
 
@@ -37,7 +37,7 @@ const article2={
     };
 
     
-const HTML3 = <div><div className="Temporary-Test">In October we will be holding preview screenings for 6 
+const HTML3 = <div><div>In October we will be holding preview screenings for 6 
 different upcoming movies! </div>
 <div>Fill out the form below with the absolutely not fake email that you use for your 
   Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, 
@@ -126,7 +126,7 @@ const article3={
 
   
     
-const HTML4 = <div><div className="Temporary-Test">On Saturday, September 5th, all tickets will be 
+const HTML4 = <div><div>On Saturday, September 5th, all tickets will be 
 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! 
 The only thing you have to do is show up and buy at least 2 buckets of popcorn.</div></div>;
 
@@ -142,7 +142,7 @@ const article4={
 
   
     
-const HTML5 = <div><div className="Temporary-Test">Here at Fictional Movie Business, we've gone to great extents to allow people to bring all of their pets to our theaters, including immense effort to install animal-only areas and to provide trained staff to make sure nothing goes wrong. We love to see all your dogs, cats, lizards, alpacas, ferrets, and everything else!</div>
+const HTML5 = <div><div>Here at Fictional Movie Business, we've gone to great extents to allow people to bring all of their pets to our theaters, including immense effort to install animal-only areas and to provide trained staff to make sure nothing goes wrong. We love to see all your dogs, cats, lizards, alpacas, ferrets, and everything else!</div>
 <div>However, for you to have a safe and pleasant moviegoing experience, we have added 3 new rules:</div>
 <div>-All animals must be at least a year old, so that they have any hope of obeying rules.</div>
 <div>-If the movie is 3 hours or longer, you must bring snacks for our staff to feed to your pet.</div>
@@ -158,7 +158,7 @@ const article5={
   Sections: ["HTML6"]
   };
 
-  const HTML6 = <div><div className="Temporary-Test">It's a blast from the past! 
+  const HTML6 = <div><div >It's a blast from the past! 
   We've added FORTY movies from the 1970s to our digital store!</div>
   <div>Many of them you've surely heard of- 
   but we've also included a few obscure movies that we got the rights to for practically nothing. 
@@ -176,7 +176,7 @@ const article5={
 
 
   
-    const HTML7 = <div><div className="Temporary-Test">From August 17th through August 23rd,
+    const HTML7 = <div><div>From August 17th through August 23rd,
      the following sales are in effect:</div>
     <div>-Horror movie digital viewings are 30% off</div>
     <div>-Horror movie tickets are 30% off</div>
@@ -200,7 +200,7 @@ const article5={
 
 
   
-    const HTML8 = <div><div className="Temporary-Test">Head on over to the store 
+    const HTML8 = <div><div>Head on over to the store 
     and you can get a variety of shirts with our brand on it!</div>
     <div>Over 20 colors, and in all sizes!</div>
     <div>For every shirt you buy, you'll get a 10% off coupon for movie tickets!</div>
@@ -219,7 +219,7 @@ const article8={
 
 
 
-  const HTML9 = <div><div className="Temporary-Test">We're welcoming Jace and Jesse 
+  const HTML9 = <div><div>We're welcoming Jace and Jesse 
   as new hires for our Portland location!</div>
   <div>Vanessa, our movie super-expert, is moving 
     from our Portland location to our Spokane location. If you need to ask her questions, too bad!</div>

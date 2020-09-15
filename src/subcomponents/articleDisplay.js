@@ -10,7 +10,6 @@ export  function sectionArticle(props){
     return(
       <div className="Article-Parent">
           <div>{ReadArticleData(props)}</div>
-          <div>example text 2</div>
       </div>
     );
   }
@@ -26,8 +25,7 @@ export  function sectionArticle(props){
       {contents.map((section,index) =>{
             if (section[0]==="H"){
               return(
-                <div key={index}>{props.HTMLList[section]}
-                ok so this is H {index}</div>
+                <div className="Article-HTML" key={index}>{props.HTMLList[section]}</div>
               )
             }
             if (section[0]==="G"){
@@ -35,10 +33,8 @@ export  function sectionArticle(props){
               let graphNumber=graphNumberOverall
               return(
                 <div key={index}>
-                  ok so this is G {index}
                   {chartMaker(props.graphList[props.currentGraphs[graphNumber][0]], graphNumber, props)}
-                  <div>hey its {graphNumber} let's revert!! </div>
-                  <div><button onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>start of graph pls mr #{graphNumber}</button></div>
+                  <div className="Revert-Graph-Parent"><button className="Revert-Graph" onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>Revert Graph</button></div>
                   </div>
               )
             }

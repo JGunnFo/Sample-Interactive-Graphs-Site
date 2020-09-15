@@ -49,6 +49,24 @@ html {
 .Article-Parent{
 }
 
+.Article-HTML{
+  display: grid;
+  font-size: 1.25rem;
+  justify-content: center;
+  margin: 0rem 0.75rem 0rem 0.75rem;
+  line-height: 1.75rem;
+  color: #1d1d1d;
+}
+
+.Article-HTML > div {
+  max-width: 50rem;
+  margin-bottom: 0.75rem;
+}
+
+.Article-HTML > div > div {
+  margin-bottom: 0.5rem;
+}
+
 /* ----- Top Section----- */ 
 
 
@@ -130,9 +148,11 @@ color its underline on hover as well, unlike the other navbar elements.
 }
 
 .News-Preview-Text{
+  color: #121212;
   padding-top: .5rem;
   font-size: 1rem;
 }
+
 
 /*
 No size restriction such as hiding overflow etc, 
@@ -166,12 +186,46 @@ p{
 .Graph-Title{
   font-size: 1.5rem;
   text-align: center;
+  color: #1d1d1d;
+  margin-top: 1rem;
 }
 
 
 .Graph-Itself{
   max-width: 80rem;
   margin: 0 auto;
+}
+
+.Revert-Graph-Parent{
+  margin: 1rem 0rem 1rem 0rem;
+  text-align: center;
+}
+
+.Revert-Graph{
+  font-family: inherit;
+  font-size: inherit;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  padding: 0 .8rem 0 1.1rem;
+  color: #eeecec;
+  background: rgb(15, 52, 175);
+  border-right: 0rem;
+  border-bottom: 0.24rem solid gray;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.2);
+
+
+    
+}
+
+
+.Revert-Graph:hover {
+  background-color:rgb(13, 44, 145);
+}
+
+.Revert-Graph:active {
+  background-color:rgb(13, 44, 145);
+  transform: translateY(0.1rem);
 }
 
 /*
@@ -193,8 +247,16 @@ Centering in this way because recharts has some bad interactions with flex/grid 
 }
 
 
-@media (min-width:1400px) and (min-height: 850px){
+@media (min-width:900px) and (min-height: 800px){
 
+  .Article-HTML{
+    font-size: 1.5rem;
+  }
+
+  .Article-HTML > div {
+    line-height: 2.25rem;
+  }
+  
 }
 
 
@@ -217,6 +279,16 @@ Centering in this way because recharts has some bad interactions with flex/grid 
     font-size: 0.63rem;
   }
 
+  .Article-HTML{
+    display: grid;
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+
+  
+.Article-HTML > div {
+  line-height: 1.75rem;
+}
 
 }
 
