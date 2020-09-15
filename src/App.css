@@ -118,12 +118,18 @@ color its underline on hover as well, unlike the other navbar elements.
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   font-size:1.5rem;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .Button-Unset{
   all: unset;
   cursor: pointer;
+  height: 100%;
+  width: 100%;
+
+}
+
+.News-Stuff{
 }
 
 .Button-Unset:hover{
@@ -135,7 +141,12 @@ color its underline on hover as well, unlike the other navbar elements.
 }
 
 .News-Square{
+  display: grid;
+  align-content: space-around;
+  align-items: end;
   color: blue;
+  height: 100%;
+  width: 100%;
   border-left: 3px solid gray;
   border-bottom: 3px solid gray;
   border-radius: 2px;
