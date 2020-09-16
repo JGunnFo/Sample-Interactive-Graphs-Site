@@ -25,7 +25,7 @@ export  function sectionArticle(props){
       {contents.map((section,index) =>{
             if (section[0]==="H"){
               return(
-                <div className="Article-HTML" key={index}>{props.HTMLList[section]}</div>
+                <div className="Article-HTML-Segment" key={index}>{props.HTMLList[section]}</div>
               )
             }
             if (section[0]==="G"){
@@ -34,7 +34,7 @@ export  function sectionArticle(props){
               return(
                 <div key={index}>
                   {chartMaker(props.graphList[props.currentGraphs[graphNumber][0]], graphNumber, props)}
-                  <div className="Revert-Graph-Parent"><button className="Revert-Graph" onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>Revert Graph</button></div>
+                  <div className="Revert-Graph-Parent" aria-hidden="true"><button className="Revert-Graph" onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>Revert Graph</button></div>
                   </div>
               )
             }
@@ -97,10 +97,9 @@ let title=graphInfo["title"]
   );
 
   return (
-    <div>
+    <div aria-hidden="true" >
     <div className="Graph-Title">{title}</div>
-    <div className="Graph-Itself">{renderChart}</div>
+    <div className="Graph-Overall">{renderChart}</div>
     </div>
   )
 }
-

@@ -45,15 +45,11 @@ html {
   margin-right: 0.5rem;
 }
 
-.Mobile-View{
-  display: none;
-}
-
 
 .Article-Parent{
 }
 
-.Article-HTML{
+.Article-HTML-Segment{
   display: grid;
   font-size: 1.25rem;
   justify-content: center;
@@ -62,12 +58,12 @@ html {
   color: #1d1d1d;
 }
 
-.Article-HTML > div {
+.Article-HTML-Segment > div {
   max-width: 50rem;
   margin-bottom: 0.75rem;
 }
 
-.Article-HTML > div > div {
+.Article-HTML-Segment > div > div {
   margin-bottom: 0.5rem;
 }
 
@@ -102,15 +98,16 @@ html {
   color: inherit;
 
 }
+a:hover{
+  color: purple;
+}
+
 
 /*
 Just to normalize appearance amongst navbar elements - for example, without all:inherit, the github link will
 color its underline on hover as well, unlike the other navbar elements.
 */
 
-a:hover{
-  color: purple;
-}
 
 .Nav-Link:hover{
   all: inherit;
@@ -133,8 +130,9 @@ a:hover{
 
 
 /*
-Would use unset itself, but it causes issues with IOS safari in some cases.
+Would perhaps use unset itself, but it causes issues with IOS safari in some cases.
 */
+
 .Button-Unset{
   background: none;
   border: none;
@@ -160,7 +158,7 @@ Would use unset itself, but it causes issues with IOS safari in some cases.
   color: purple;
 }
 
-.News-Button{
+.News-Square-Button{
   border-left: 1px solid gray;
   border-bottom: 1px solid gray;
   border-radius: 2px;
@@ -179,9 +177,12 @@ The box shadow has to be attached to the button in order to show up on ios safar
 rather than working while attached to a div inside the button.
 
 Since the box shadow, border and padding are all spatially related, I kept them together.
+
+But because buttons are weird about other things, such as grid, I kept other properties 
+inside News-Square instead.
 */
 
-.News-Square{
+.News-Square-Div{
   display: grid;
   align-content: space-around;
   align-items: end;
@@ -191,7 +192,7 @@ Since the box shadow, border and padding are all spatially related, I kept them 
 }
 
 
-.News-Square:hover{
+.News-Square-Div:hover{
   color:purple;
 }
 
@@ -199,6 +200,12 @@ Since the box shadow, border and padding are all spatially related, I kept them 
 .News-Title-Text{
   text-decoration: underline;
 }
+
+
+/*
+No size restriction such as hiding overflow etc, 
+relying on character limits for the content to prevent overflow issues.
+*/
 
 .News-Preview-Text{
   color: #121212;
@@ -209,30 +216,15 @@ Since the box shadow, border and padding are all spatially related, I kept them 
 }
 
 
-/*
-No size restriction such as hiding overflow etc, 
-relying on character limits for the content to prevent overflow issues.
-*/
 
 
-
-p{
-  line-height: 2rem;
-}
-
-.Large-View{
-  line-height: 2rem;
-}
 
 
 .Graph-X-Axis{
   font-size: 1rem;
+  height: 55.5rem;
 }
 
-.recharts-cartesian-axis-ticks{
-  font-size: .7rem;
-  font-family: inherit;
-}
 
 .Graph-Title{
   font-size: 1.5rem;
@@ -241,11 +233,16 @@ p{
   margin-top: 1rem;
 }
 
+/*
+Centering in this way because recharts has some bad interactions with flex/grid containers.
+*/
 
-.Graph-Itself{
+.Graph-Overall{
   max-width: 80rem;
   margin: 0 auto;
 }
+
+
 
 .Revert-Graph-Parent{
   margin: 1rem 0rem 1rem 0rem;
@@ -267,7 +264,6 @@ p{
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.2);
 
 
-    
 }
 
 
@@ -280,19 +276,21 @@ p{
   transform: translateY(0.1rem);
 }
 
+
+
 /*
-Centering in this way because recharts has some bad interactions with flex/grid containers.
+The styles below are modifications for recharts's built in styles.
 */
 
+.recharts-cartesian-axis-ticks{
+  font-size: .7rem;
+  font-family: inherit;
+}
 
 .recharts-xAxis{
   height: 55.5rem;
 }
 
-
-.Graph-X-Axis{
-  height: 55.5rem;
-}
 
 .recharts-cartesian-axis-tick{
   height: 55.5rem;
@@ -301,11 +299,11 @@ Centering in this way because recharts has some bad interactions with flex/grid 
 
 @media (min-width:900px) and (min-height: 800px){
 
-  .Article-HTML{
+  .Article-HTML-Segment{
     font-size: 1.5rem;
   }
 
-  .Article-HTML > div {
+  .Article-HTML-Segment > div {
     line-height: 2.25rem;
   }
   
@@ -320,14 +318,14 @@ Centering in this way because recharts has some bad interactions with flex/grid 
     font-size: 0.63rem;
   }
 
-  .Article-HTML{
+  .Article-HTML-Segment{
     display: grid;
     font-size: 1.1rem;
     justify-content: center;
   }
 
   
-.Article-HTML > div {
+.Article-HTML-Segment > div {
   line-height: 1.75rem;
 }
 
@@ -339,13 +337,5 @@ Centering in this way because recharts has some bad interactions with flex/grid 
 
 
 
-  .Large-View{
-    display: none;
-  }
-
-  .Mobile-View{
-    display: inline-block;
-    line-height: 1.4rem;
-  }
 
 }

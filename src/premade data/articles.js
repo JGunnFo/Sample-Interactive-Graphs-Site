@@ -16,7 +16,7 @@ const article1={
 };
     
 
-const HTML1 =  <div>Click on any of the bars in the graph to view more of the data!</div>
+const HTML1 =  <div aria-hidden="true">Click on any of the bars in the graph to view more of the data!</div>
 const GraphArranged_Genres_August = {  
   data:[{name:"Horror", sales:400}, {name:"Action", sales:700}, {name:"Romance", sales:600}, {name:"Comedy", sales:650}, {name:"Drama", sales:550}], 
   title: "August Sales By Genre", 

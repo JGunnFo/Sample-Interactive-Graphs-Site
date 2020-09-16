@@ -27,7 +27,7 @@ class TopComponent extends React.Component {
     return (
       <div className="Overall-Parent">
       <div>{this.renderNav()}</div>
-      <div>{this.renderContent()}</div>
+      <div aria-live="polite">{this.renderContent()}</div>
     </div>
 
   );

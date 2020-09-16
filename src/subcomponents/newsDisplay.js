@@ -26,11 +26,11 @@ export  function sectionNews(props){
   function RenderSquares(passedPreview, props, index){
     return(
       <div key={index}>
-      <button className="Button-Unset News-Button" onClick={() => {props.dispatch(ArticleClick(passedPreview["Sections"]))}}>
-        <div className="News-Square">
-      <div className="News-Title-Text">{passedPreview["TitleText"]}</div>
-      <div className="News-Preview-Text" >{passedPreview["PreviewText"]}</div>
-        </div>
+      <button className="Button-Unset News-Square-Button" onClick={() => {props.dispatch(ArticleClick(passedPreview["Sections"]))}}>
+      <div className="News-Square-Div">
+        <div className="News-Title-Text">{passedPreview["TitleText"]}</div>
+        <div className="News-Preview-Text" >{passedPreview["PreviewText"]}</div>
+      </div>
       </button>
       </div>
     )
