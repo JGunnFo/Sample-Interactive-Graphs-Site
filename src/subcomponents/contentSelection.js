@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTORIGIN, ChartOrigin} from "../Actions";
 import { sectionNews } from "./newsDisplay.js";
 import { sectionArticle } from "./articleDisplay.js";
+import { sectionAbout } from "./aboutDisplay.js";
 
 export function mainContentFrame(props){
     return(
@@ -28,6 +29,13 @@ export function mainContentFrame(props){
       }
   
    
+      if (props.section==="About"){
+        return( 
+          <div role="main">{sectionAbout(props)}</div>
+       )
+        }
+    
+     
   }
 
   

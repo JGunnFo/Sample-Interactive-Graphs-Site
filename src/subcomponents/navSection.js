@@ -43,7 +43,7 @@ export function navBar(props){
     if (passTo==="Github"){
       return(
       <div>
-      <a className="Nav-Link" href="https://github.com/JGunnFnnno?tab=repositories" aria-label="Github Link">Github</a>
+      <a className="Nav-Link" href="https://github.com/JGunnFo?tab=repositories" aria-label="Github Link">Github</a>
       </div>
       )
     }
