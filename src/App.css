@@ -108,6 +108,10 @@ Just to normalize appearance amongst navbar elements - for example, without all:
 color its underline on hover as well, unlike the other navbar elements.
 */
 
+a:hover{
+  color: purple;
+}
+
 .Nav-Link:hover{
   all: inherit;
   cursor: pointer;
@@ -156,6 +160,27 @@ Would use unset itself, but it causes issues with IOS safari in some cases.
   color: purple;
 }
 
+.News-Button{
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  padding-left: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/*
+The box shadow etc is being placed on the button itself rather than the div inside the button.
+
+Making the whole news blocks clickable as buttons runs into some idiosyncrasies that have to
+be worked around. Buttons behave strangely, unfortunately.
+The box shadow has to be attached to the button in order to show up on ios safari,
+rather than working while attached to a div inside the button.
+
+Since the box shadow, border and padding are all spatially related, I kept them together.
+*/
+
 .News-Square{
   display: grid;
   align-content: space-around;
@@ -163,14 +188,6 @@ Would use unset itself, but it causes issues with IOS safari in some cases.
   color: rgb(14, 14, 196);
   height: 100%;
   width: 100%;
-  border-left: 1px solid gray;
-  border-bottom: 1px solid gray;
-  border-radius: 2px;
-  padding-left: 0.8rem;
-  padding-bottom: 0.8rem;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-  border-radius: 2px;
 }
 
 
