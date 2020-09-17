@@ -29,6 +29,8 @@ function GenreClicked(barName){
 }
 
 function MovieClicked(barName){
+  console.log("the movie name is..")
+  console.log(barName)
 
   return movieNameGraphPairs[barName];
 }
@@ -83,6 +85,7 @@ export const reducer = produce((draft=initialStateReducer, action) => {
         return draft;
 
       }else if (draft.currentGraphs[action.payload[1]][0].slice(0,10)==="GraphGenre"){
+        console.log("here we are")
         draft.currentGraphs[action.payload[1]][0]=MovieClicked(action.payload[0]["name"])
         console.log(draft.currentGraphs[action.payload[1]][0])
         return draft;
