@@ -116,8 +116,6 @@ color its underline on hover as well, unlike the other navbar elements.
 }
 
 
-.Nav-Link:visited{
-}
 
 .News-Grid-Parent{
   display: grid;

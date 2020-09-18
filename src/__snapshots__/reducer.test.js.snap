@@ -1,0 +1,2995 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todos reducer should handle GOTO NEWS 1`] = `
+Object {
+  "HTMLList": Object {
+    "HTML1": <div
+      aria-hidden="true"
+    >
+      Click on any of the bars in the graph to view more of the data!
+    </div>,
+    "HTML2": <div>
+      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+    </div>,
+    "HTML3": <div>
+      <div>
+        In October we will be holding preview screenings for 6 different upcoming movies! 
+      </div>
+      <div>
+        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
+      </div>
+    </div>,
+    "HTML4": <div>
+      <div>
+        On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
+      </div>
+    </div>,
+    "HTML5": <div>
+      <div>
+        Here at Fictional Movie Business, we've gone to great extents to allow people to bring all of their pets to our theaters, including immense effort to install animal-only areas and to provide trained staff to make sure nothing goes wrong. We love to see all your dogs, cats, lizards, alpacas, ferrets, and everything else!
+      </div>
+      <div>
+        <br />
+        However, for you to have a safe and pleasant moviegoing experience, we have added 3 new rules:
+      </div>
+      <div>
+        -All animals must be at least a year old, so that they have any hope of obeying rules.
+      </div>
+      <div>
+        -If the movie is 3 hours or longer, you must bring snacks for our staff to feed to your pet.
+      </div>
+      <div>
+        -No leash, no service.
+      </div>
+    </div>,
+    "HTML6": <div>
+      <div>
+        It's a blast from the past! We've added FORTY movies from the 1970s to our digital store!
+      </div>
+      <div>
+        Many of them you've surely heard of- but we've also included a few obscure movies that we got the rights to for practically nothing. Enjoy!
+      </div>
+    </div>,
+    "HTML7": <div>
+      <div>
+        From August 17th through August 23rd, the following sales are in effect:
+      </div>
+      <div>
+        -Horror movie digital viewings are 30% off
+      </div>
+      <div>
+        -Horror movie tickets are 30% off
+      </div>
+      <div>
+        -Horror movie tickets booked at least two days in advance are 50% off!
+      </div>
+      <div>
+        -If you bring at least 3 friends, the tickets are a further 20% off!
+      </div>
+      <div>
+        You know what to do!
+      </div>
+    </div>,
+    "HTML8": <div>
+      <div>
+        Head on over to the store and you can get a variety of shirts with our brand on it!
+      </div>
+      <div>
+        Over 20 colors, and in all sizes!
+      </div>
+      <div>
+        For every shirt you buy, you'll get a 10% off coupon for movie tickets!
+      </div>
+    </div>,
+    "HTML9": <div>
+      <div>
+        We're welcoming Jace and Jesse as new hires for our Portland location!
+      </div>
+      <div>
+        Vanessa, our movie super-expert, is moving from our Portland location to our Spokane location. If you need to ask her questions, too bad!
+      </div>
+    </div>,
+  },
+  "articleList": Array [
+    Object {
+      "Date": 2020-10-10T07:00:00.000Z,
+      "PreviewText": "Ever wonder if horror movies are more popular than romance movies?  These August movie sales will tell the truth!",
+      "Sections": Array [
+        "HTML1",
+        "GraphArranged_Genres_August",
+        "HTML2",
+      ],
+      "TitleText": "Interactive Data",
+    },
+    Object {
+      "Date": 2020-10-06T07:00:00.000Z,
+      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
+      "Sections": Array [
+        "HTML3",
+        "Form1",
+      ],
+      "TitleText": "Sign up for a special screening!",
+    },
+    Object {
+      "Date": 2020-10-05T07:00:00.000Z,
+      "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
+      "Sections": Array [
+        "HTML5",
+      ],
+      "TitleText": "Updated Rules on Bringing Pets",
+    },
+    Object {
+      "Date": 2020-10-01T07:00:00.000Z,
+      "PreviewText": "What could be better than cheap movies on the weekend?",
+      "Sections": Array [
+        "HTML4",
+      ],
+      "TitleText": "30% off Tickets on September 5th!",
+    },
+    Object {
+      "Date": 2020-09-25T07:00:00.000Z,
+      "PreviewText": "We've added a lot of 1970s classics to our digital library!",
+      "Sections": Array [
+        "HTML6",
+      ],
+      "TitleText": "Several 1970s movies available!",
+    },
+    Object {
+      "Date": 2020-09-15T07:00:00.000Z,
+      "PreviewText": "For horror week, you can save big! Click here to find out more!",
+      "Sections": Array [
+        "HTML7",
+      ],
+      "TitleText": "Horror Week Sale!",
+    },
+    Object {
+      "Date": 2020-09-09T07:00:00.000Z,
+      "PreviewText": "You love us, right? Then wear a t-shirt with our logo on it! You'll get a ticket discount!",
+      "Sections": Array [
+        "HTML8",
+      ],
+      "TitleText": "T-Shirts with your favorite brand!",
+    },
+    Object {
+      "Date": 2020-09-02T07:00:00.000Z,
+      "PreviewText": "We've got some new hires, and some staff relocating.",
+      "Sections": Array [
+        "HTML9",
+      ],
+      "TitleText": "Staff Changes",
+    },
+  ],
+  "currentArticle": Array [
+    "HTML1",
+    "GraphArranged_Genres_August",
+    "HTML2",
+    "HTML5",
+    "GraphDate_Week2_August",
+    "GraphArranged_Genres_August",
+    "HTML3",
+  ],
+  "currentGraphs": Array [
+    Array [
+      "GraphGenre_Action_August",
+      "GraphArranged_Genres_August",
+    ],
+    Array [
+      "GraphArranged_Genres_August",
+      "GraphDate_Week3_August",
+    ],
+    Array [
+      "GraphMovie_Byrnadel_August",
+      "GraphArranged_Genres_August",
+    ],
+  ],
+  "formList": Array [
+    <Formik
+      initialValues={
+        Object {
+          "email": "",
+        }
+      }
+      onSubmit={[Function]}
+      validationSchema={
+        ObjectSchema {
+          "_blacklist": RefSet {
+            "list": Set {},
+            "refs": Map {},
+          },
+          "_conditions": Array [],
+          "_defaultDefault": [Function],
+          "_deps": Array [],
+          "_excludedEdges": Array [],
+          "_exclusive": Object {},
+          "_mutate": undefined,
+          "_nodes": Array [
+            "email",
+          ],
+          "_options": Object {
+            "abortEarly": true,
+            "recursive": true,
+          },
+          "_type": "object",
+          "_typeError": [Function],
+          "_whitelist": RefSet {
+            "list": Set {},
+            "refs": Map {},
+          },
+          "fields": Object {
+            "email": StringSchema {
+              "_blacklist": RefSet {
+                "list": Set {},
+                "refs": Map {},
+              },
+              "_conditions": Array [],
+              "_deps": Array [],
+              "_exclusive": Object {
+                "email": false,
+                "required": true,
+              },
+              "_mutate": undefined,
+              "_options": Object {
+                "abortEarly": true,
+                "recursive": true,
+              },
+              "_type": "string",
+              "_typeError": [Function],
+              "_whitelist": RefSet {
+                "list": Set {},
+                "refs": Map {},
+              },
+              "tests": Array [
+                [Function],
+                [Function],
+              ],
+              "transforms": Array [
+                [Function],
+              ],
+              "type": "string",
+            },
+          },
+          "tests": Array [],
+          "transforms": Array [
+            [Function],
+          ],
+          "type": "object",
+        }
+      }
+    >
+      [Function]
+    </Formik>,
+  ],
+  "graphList": Object {
+    "GraphArranged_Genres_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 400,
+        },
+        Object {
+          "name": "Action",
+          "sales": 700,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 600,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 650,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 550,
+        },
+      ],
+      "key": "sales",
+      "title": "August Sales By Genre",
+    },
+    "GraphDate_Week1_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 150,
+        },
+        Object {
+          "name": "Action",
+          "sales": 350,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 150,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 120,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 100,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 1 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week2_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 70,
+        },
+        Object {
+          "name": "Action",
+          "sales": 150,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 250,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 300,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 100,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 2 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week3_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 80,
+        },
+        Object {
+          "name": "Action",
+          "sales": 100,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 100,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 120,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 150,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 3 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week4_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 100,
+        },
+        Object {
+          "name": "Action",
+          "sales": 100,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 100,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 110,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 200,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 4 of August's Movie Sales by Genre",
+    },
+    "GraphGenre_Action_August": Object {
+      "data": Array [
+        Object {
+          "name": "Byrnadel's Squadron",
+          "sales": 250,
+        },
+        Object {
+          "name": "Explosion fest",
+          "sales": 100,
+        },
+        Object {
+          "name": "The Hero from the Forest",
+          "sales": 110,
+        },
+        Object {
+          "name": "Dragons vs Dinosaurs",
+          "sales": 120,
+        },
+        Object {
+          "name": "Large Robots",
+          "sales": 125,
+        },
+      ],
+      "key": "sales",
+      "title": "Action Movie Sales in August",
+    },
+    "GraphGenre_Comedy_August": Object {
+      "data": Array [
+        Object {
+          "name": "Rusty's Wedding",
+          "sales": 240,
+        },
+        Object {
+          "name": "Little Salad Spinners",
+          "sales": 100,
+        },
+        Object {
+          "name": "One Shot To Go",
+          "sales": 110,
+        },
+        Object {
+          "name": "Meet The Gorgon Family",
+          "sales": 210,
+        },
+      ],
+      "key": "sales",
+      "title": "Comedy Movie Sales in August",
+    },
+    "GraphGenre_Drama_August": Object {
+      "data": Array [
+        Object {
+          "name": "Steel and Light",
+          "sales": 100,
+        },
+        Object {
+          "name": "Daniel Lighto",
+          "sales": 140,
+        },
+        Object {
+          "name": "The Baritones",
+          "sales": 80,
+        },
+        Object {
+          "name": "Inara's Mind",
+          "sales": 150,
+        },
+      ],
+      "key": "sales",
+      "title": "Drama Movie Sales in August",
+    },
+    "GraphGenre_Horror_August": Object {
+      "data": Array [
+        Object {
+          "name": "The Nosferatu of Wall Street",
+          "sales": 60,
+        },
+        Object {
+          "name": "Dead Universe",
+          "sales": 90,
+        },
+        Object {
+          "name": "Empty Woods",
+          "sales": 100,
+        },
+        Object {
+          "name": "The New Jersey Folding Chair Massacre",
+          "sales": 130,
+        },
+      ],
+      "key": "sales",
+      "title": "Horror Movie Sales in August",
+    },
+    "GraphGenre_Romance_August": Object {
+      "data": Array [
+        Object {
+          "name": "Outcasts In Love",
+          "sales": 70,
+        },
+        Object {
+          "name": "Serene Nights",
+          "sales": 65,
+        },
+        Object {
+          "name": "Too Many Satyrs",
+          "sales": 140,
+        },
+        Object {
+          "name": "Looking At Him",
+          "sales": 80,
+        },
+        Object {
+          "name": "Seductive Merman",
+          "sales": 200,
+        },
+      ],
+      "key": "sales",
+      "title": "Romance Movie Sales in August",
+    },
+    "GraphMovie_Baritones_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "The Baritones's Sales in August",
+    },
+    "GraphMovie_Byrnadel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 30,
+        },
+      ],
+      "key": "sales",
+      "title": "Byrnadel's Squadron's Sales in August",
+    },
+    "GraphMovie_Daniel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 40,
+        },
+      ],
+      "key": "sales",
+      "title": "Daniel Lighto's Sales in August",
+    },
+    "GraphMovie_Dead_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "Dead Universe's Sales in August",
+    },
+    "GraphMovie_Dragons_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Dragons vs Dinosaurs's Sales in August",
+    },
+    "GraphMovie_Empty_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 80,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Empty Woods's Sales in August",
+    },
+    "GraphMovie_Explosion_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 90,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 4,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 3,
+        },
+      ],
+      "key": "sales",
+      "title": "Explosionfest's Sales in August",
+    },
+    "GraphMovie_Gorgon_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "Meet The Gorgon Family's Sales in August",
+    },
+    "GraphMovie_Hero_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "The Hero from the Forest's Sales in August",
+    },
+    "GraphMovie_Inara_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 50,
+        },
+      ],
+      "key": "sales",
+      "title": "Inara's Mind's Sales in August",
+    },
+    "GraphMovie_Jersey_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "The New Jersey Folding Chair Massacre's Sales in August",
+    },
+    "GraphMovie_Looking_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 1,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 7,
+        },
+      ],
+      "key": "sales",
+      "title": "Looking At Him's Sales in August",
+    },
+    "GraphMovie_Merman_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 70,
+        },
+      ],
+      "key": "sales",
+      "title": "Seductive Merman's Sales in August",
+    },
+    "GraphMovie_Nosferatu_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "The Nosferatu of Wall Street's Sales in August",
+    },
+    "GraphMovie_OneShot_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 30,
+        },
+      ],
+      "key": "sales",
+      "title": "One Shot To Go's Sales in August",
+    },
+    "GraphMovie_Outcasts_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 25,
+        },
+      ],
+      "key": "sales",
+      "title": "Outcasts In Love's Sales in August",
+    },
+    "GraphMovie_Robots_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 115,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Large Robots's Sales in August",
+    },
+    "GraphMovie_Rusty_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 60,
+        },
+      ],
+      "key": "sales",
+      "title": "Rusty's Wedding's Sales in August",
+    },
+    "GraphMovie_Salad_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 40,
+        },
+      ],
+      "key": "sales",
+      "title": "Little Salad Spinners's Sales in August",
+    },
+    "GraphMovie_Satyrs_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "Too Many Satyrs's Sales in August",
+    },
+    "GraphMovie_Serene_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 45,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 15,
+        },
+      ],
+      "key": "sales",
+      "title": "Serene Nights's Sales in August",
+    },
+    "GraphMovie_Steel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 15,
+        },
+      ],
+      "key": "sales",
+      "title": "Steel and Light's Sales in August",
+    },
+  },
+  "section": "News",
+  "transition": false,
+}
+`;
+
+exports[`todos reducer should handle TODO_REQUEST 1`] = `
+Object {
+  "HTMLList": Object {
+    "HTML1": <div
+      aria-hidden="true"
+    >
+      Click on any of the bars in the graph to view more of the data!
+    </div>,
+    "HTML2": <div>
+      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+    </div>,
+    "HTML3": <div>
+      <div>
+        In October we will be holding preview screenings for 6 different upcoming movies! 
+      </div>
+      <div>
+        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
+      </div>
+    </div>,
+    "HTML4": <div>
+      <div>
+        On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
+      </div>
+    </div>,
+    "HTML5": <div>
+      <div>
+        Here at Fictional Movie Business, we've gone to great extents to allow people to bring all of their pets to our theaters, including immense effort to install animal-only areas and to provide trained staff to make sure nothing goes wrong. We love to see all your dogs, cats, lizards, alpacas, ferrets, and everything else!
+      </div>
+      <div>
+        <br />
+        However, for you to have a safe and pleasant moviegoing experience, we have added 3 new rules:
+      </div>
+      <div>
+        -All animals must be at least a year old, so that they have any hope of obeying rules.
+      </div>
+      <div>
+        -If the movie is 3 hours or longer, you must bring snacks for our staff to feed to your pet.
+      </div>
+      <div>
+        -No leash, no service.
+      </div>
+    </div>,
+    "HTML6": <div>
+      <div>
+        It's a blast from the past! We've added FORTY movies from the 1970s to our digital store!
+      </div>
+      <div>
+        Many of them you've surely heard of- but we've also included a few obscure movies that we got the rights to for practically nothing. Enjoy!
+      </div>
+    </div>,
+    "HTML7": <div>
+      <div>
+        From August 17th through August 23rd, the following sales are in effect:
+      </div>
+      <div>
+        -Horror movie digital viewings are 30% off
+      </div>
+      <div>
+        -Horror movie tickets are 30% off
+      </div>
+      <div>
+        -Horror movie tickets booked at least two days in advance are 50% off!
+      </div>
+      <div>
+        -If you bring at least 3 friends, the tickets are a further 20% off!
+      </div>
+      <div>
+        You know what to do!
+      </div>
+    </div>,
+    "HTML8": <div>
+      <div>
+        Head on over to the store and you can get a variety of shirts with our brand on it!
+      </div>
+      <div>
+        Over 20 colors, and in all sizes!
+      </div>
+      <div>
+        For every shirt you buy, you'll get a 10% off coupon for movie tickets!
+      </div>
+    </div>,
+    "HTML9": <div>
+      <div>
+        We're welcoming Jace and Jesse as new hires for our Portland location!
+      </div>
+      <div>
+        Vanessa, our movie super-expert, is moving from our Portland location to our Spokane location. If you need to ask her questions, too bad!
+      </div>
+    </div>,
+  },
+  "articleList": Array [
+    Object {
+      "Date": 2020-10-10T07:00:00.000Z,
+      "PreviewText": "Ever wonder if horror movies are more popular than romance movies?  These August movie sales will tell the truth!",
+      "Sections": Array [
+        "HTML1",
+        "GraphArranged_Genres_August",
+        "HTML2",
+      ],
+      "TitleText": "Interactive Data",
+    },
+    Object {
+      "Date": 2020-10-06T07:00:00.000Z,
+      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
+      "Sections": Array [
+        "HTML3",
+        "Form1",
+      ],
+      "TitleText": "Sign up for a special screening!",
+    },
+    Object {
+      "Date": 2020-10-05T07:00:00.000Z,
+      "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
+      "Sections": Array [
+        "HTML5",
+      ],
+      "TitleText": "Updated Rules on Bringing Pets",
+    },
+    Object {
+      "Date": 2020-10-01T07:00:00.000Z,
+      "PreviewText": "What could be better than cheap movies on the weekend?",
+      "Sections": Array [
+        "HTML4",
+      ],
+      "TitleText": "30% off Tickets on September 5th!",
+    },
+    Object {
+      "Date": 2020-09-25T07:00:00.000Z,
+      "PreviewText": "We've added a lot of 1970s classics to our digital library!",
+      "Sections": Array [
+        "HTML6",
+      ],
+      "TitleText": "Several 1970s movies available!",
+    },
+    Object {
+      "Date": 2020-09-15T07:00:00.000Z,
+      "PreviewText": "For horror week, you can save big! Click here to find out more!",
+      "Sections": Array [
+        "HTML7",
+      ],
+      "TitleText": "Horror Week Sale!",
+    },
+    Object {
+      "Date": 2020-09-09T07:00:00.000Z,
+      "PreviewText": "You love us, right? Then wear a t-shirt with our logo on it! You'll get a ticket discount!",
+      "Sections": Array [
+        "HTML8",
+      ],
+      "TitleText": "T-Shirts with your favorite brand!",
+    },
+    Object {
+      "Date": 2020-09-02T07:00:00.000Z,
+      "PreviewText": "We've got some new hires, and some staff relocating.",
+      "Sections": Array [
+        "HTML9",
+      ],
+      "TitleText": "Staff Changes",
+    },
+  ],
+  "currentArticle": Array [
+    "HTML1",
+    "GraphArranged_Genres_August",
+    "HTML2",
+    "HTML5",
+    "GraphDate_Week2_August",
+    "GraphArranged_Genres_August",
+    "HTML3",
+  ],
+  "currentGraphs": Array [
+    Array [
+      "GraphGenre_Action_August",
+      "GraphArranged_Genres_August",
+    ],
+    Array [
+      "GraphArranged_Genres_August",
+      "GraphDate_Week3_August",
+    ],
+    Array [
+      "GraphMovie_Byrnadel_August",
+      "GraphArranged_Genres_August",
+    ],
+  ],
+  "formList": Array [
+    <Formik
+      initialValues={
+        Object {
+          "email": "",
+        }
+      }
+      onSubmit={[Function]}
+      validationSchema={
+        ObjectSchema {
+          "_blacklist": RefSet {
+            "list": Set {},
+            "refs": Map {},
+          },
+          "_conditions": Array [],
+          "_defaultDefault": [Function],
+          "_deps": Array [],
+          "_excludedEdges": Array [],
+          "_exclusive": Object {},
+          "_mutate": undefined,
+          "_nodes": Array [
+            "email",
+          ],
+          "_options": Object {
+            "abortEarly": true,
+            "recursive": true,
+          },
+          "_type": "object",
+          "_typeError": [Function],
+          "_whitelist": RefSet {
+            "list": Set {},
+            "refs": Map {},
+          },
+          "fields": Object {
+            "email": StringSchema {
+              "_blacklist": RefSet {
+                "list": Set {},
+                "refs": Map {},
+              },
+              "_conditions": Array [],
+              "_deps": Array [],
+              "_exclusive": Object {
+                "email": false,
+                "required": true,
+              },
+              "_mutate": undefined,
+              "_options": Object {
+                "abortEarly": true,
+                "recursive": true,
+              },
+              "_type": "string",
+              "_typeError": [Function],
+              "_whitelist": RefSet {
+                "list": Set {},
+                "refs": Map {},
+              },
+              "tests": Array [
+                [Function],
+                [Function],
+              ],
+              "transforms": Array [
+                [Function],
+              ],
+              "type": "string",
+            },
+          },
+          "tests": Array [],
+          "transforms": Array [
+            [Function],
+          ],
+          "type": "object",
+        }
+      }
+    >
+      [Function]
+    </Formik>,
+  ],
+  "graphList": Object {
+    "GraphArranged_Genres_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 400,
+        },
+        Object {
+          "name": "Action",
+          "sales": 700,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 600,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 650,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 550,
+        },
+      ],
+      "key": "sales",
+      "title": "August Sales By Genre",
+    },
+    "GraphDate_Week1_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 150,
+        },
+        Object {
+          "name": "Action",
+          "sales": 350,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 150,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 120,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 100,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 1 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week2_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 70,
+        },
+        Object {
+          "name": "Action",
+          "sales": 150,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 250,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 300,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 100,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 2 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week3_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 80,
+        },
+        Object {
+          "name": "Action",
+          "sales": 100,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 100,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 120,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 150,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 3 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week4_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 100,
+        },
+        Object {
+          "name": "Action",
+          "sales": 100,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 100,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 110,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 200,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 4 of August's Movie Sales by Genre",
+    },
+    "GraphGenre_Action_August": Object {
+      "data": Array [
+        Object {
+          "name": "Byrnadel's Squadron",
+          "sales": 250,
+        },
+        Object {
+          "name": "Explosion fest",
+          "sales": 100,
+        },
+        Object {
+          "name": "The Hero from the Forest",
+          "sales": 110,
+        },
+        Object {
+          "name": "Dragons vs Dinosaurs",
+          "sales": 120,
+        },
+        Object {
+          "name": "Large Robots",
+          "sales": 125,
+        },
+      ],
+      "key": "sales",
+      "title": "Action Movie Sales in August",
+    },
+    "GraphGenre_Comedy_August": Object {
+      "data": Array [
+        Object {
+          "name": "Rusty's Wedding",
+          "sales": 240,
+        },
+        Object {
+          "name": "Little Salad Spinners",
+          "sales": 100,
+        },
+        Object {
+          "name": "One Shot To Go",
+          "sales": 110,
+        },
+        Object {
+          "name": "Meet The Gorgon Family",
+          "sales": 210,
+        },
+      ],
+      "key": "sales",
+      "title": "Comedy Movie Sales in August",
+    },
+    "GraphGenre_Drama_August": Object {
+      "data": Array [
+        Object {
+          "name": "Steel and Light",
+          "sales": 100,
+        },
+        Object {
+          "name": "Daniel Lighto",
+          "sales": 140,
+        },
+        Object {
+          "name": "The Baritones",
+          "sales": 80,
+        },
+        Object {
+          "name": "Inara's Mind",
+          "sales": 150,
+        },
+      ],
+      "key": "sales",
+      "title": "Drama Movie Sales in August",
+    },
+    "GraphGenre_Horror_August": Object {
+      "data": Array [
+        Object {
+          "name": "The Nosferatu of Wall Street",
+          "sales": 60,
+        },
+        Object {
+          "name": "Dead Universe",
+          "sales": 90,
+        },
+        Object {
+          "name": "Empty Woods",
+          "sales": 100,
+        },
+        Object {
+          "name": "The New Jersey Folding Chair Massacre",
+          "sales": 130,
+        },
+      ],
+      "key": "sales",
+      "title": "Horror Movie Sales in August",
+    },
+    "GraphGenre_Romance_August": Object {
+      "data": Array [
+        Object {
+          "name": "Outcasts In Love",
+          "sales": 70,
+        },
+        Object {
+          "name": "Serene Nights",
+          "sales": 65,
+        },
+        Object {
+          "name": "Too Many Satyrs",
+          "sales": 140,
+        },
+        Object {
+          "name": "Looking At Him",
+          "sales": 80,
+        },
+        Object {
+          "name": "Seductive Merman",
+          "sales": 200,
+        },
+      ],
+      "key": "sales",
+      "title": "Romance Movie Sales in August",
+    },
+    "GraphMovie_Baritones_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "The Baritones's Sales in August",
+    },
+    "GraphMovie_Byrnadel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 30,
+        },
+      ],
+      "key": "sales",
+      "title": "Byrnadel's Squadron's Sales in August",
+    },
+    "GraphMovie_Daniel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 40,
+        },
+      ],
+      "key": "sales",
+      "title": "Daniel Lighto's Sales in August",
+    },
+    "GraphMovie_Dead_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "Dead Universe's Sales in August",
+    },
+    "GraphMovie_Dragons_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Dragons vs Dinosaurs's Sales in August",
+    },
+    "GraphMovie_Empty_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 80,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Empty Woods's Sales in August",
+    },
+    "GraphMovie_Explosion_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 90,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 4,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 3,
+        },
+      ],
+      "key": "sales",
+      "title": "Explosionfest's Sales in August",
+    },
+    "GraphMovie_Gorgon_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "Meet The Gorgon Family's Sales in August",
+    },
+    "GraphMovie_Hero_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "The Hero from the Forest's Sales in August",
+    },
+    "GraphMovie_Inara_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 50,
+        },
+      ],
+      "key": "sales",
+      "title": "Inara's Mind's Sales in August",
+    },
+    "GraphMovie_Jersey_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "The New Jersey Folding Chair Massacre's Sales in August",
+    },
+    "GraphMovie_Looking_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 1,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 7,
+        },
+      ],
+      "key": "sales",
+      "title": "Looking At Him's Sales in August",
+    },
+    "GraphMovie_Merman_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 70,
+        },
+      ],
+      "key": "sales",
+      "title": "Seductive Merman's Sales in August",
+    },
+    "GraphMovie_Nosferatu_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "The Nosferatu of Wall Street's Sales in August",
+    },
+    "GraphMovie_OneShot_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 30,
+        },
+      ],
+      "key": "sales",
+      "title": "One Shot To Go's Sales in August",
+    },
+    "GraphMovie_Outcasts_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 25,
+        },
+      ],
+      "key": "sales",
+      "title": "Outcasts In Love's Sales in August",
+    },
+    "GraphMovie_Robots_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 115,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Large Robots's Sales in August",
+    },
+    "GraphMovie_Rusty_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 60,
+        },
+      ],
+      "key": "sales",
+      "title": "Rusty's Wedding's Sales in August",
+    },
+    "GraphMovie_Salad_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 40,
+        },
+      ],
+      "key": "sales",
+      "title": "Little Salad Spinners's Sales in August",
+    },
+    "GraphMovie_Satyrs_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "Too Many Satyrs's Sales in August",
+    },
+    "GraphMovie_Serene_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 45,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 15,
+        },
+      ],
+      "key": "sales",
+      "title": "Serene Nights's Sales in August",
+    },
+    "GraphMovie_Steel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 15,
+        },
+      ],
+      "key": "sales",
+      "title": "Steel and Light's Sales in August",
+    },
+  },
+  "section": "News",
+  "transition": false,
+}
+`;
+
+exports[`todos reducer should return the initial state 1`] = `
+Object {
+  "HTMLList": Object {
+    "HTML1": <div
+      aria-hidden="true"
+    >
+      Click on any of the bars in the graph to view more of the data!
+    </div>,
+    "HTML2": <div>
+      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+    </div>,
+    "HTML3": <div>
+      <div>
+        In October we will be holding preview screenings for 6 different upcoming movies! 
+      </div>
+      <div>
+        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
+      </div>
+    </div>,
+    "HTML4": <div>
+      <div>
+        On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
+      </div>
+    </div>,
+    "HTML5": <div>
+      <div>
+        Here at Fictional Movie Business, we've gone to great extents to allow people to bring all of their pets to our theaters, including immense effort to install animal-only areas and to provide trained staff to make sure nothing goes wrong. We love to see all your dogs, cats, lizards, alpacas, ferrets, and everything else!
+      </div>
+      <div>
+        <br />
+        However, for you to have a safe and pleasant moviegoing experience, we have added 3 new rules:
+      </div>
+      <div>
+        -All animals must be at least a year old, so that they have any hope of obeying rules.
+      </div>
+      <div>
+        -If the movie is 3 hours or longer, you must bring snacks for our staff to feed to your pet.
+      </div>
+      <div>
+        -No leash, no service.
+      </div>
+    </div>,
+    "HTML6": <div>
+      <div>
+        It's a blast from the past! We've added FORTY movies from the 1970s to our digital store!
+      </div>
+      <div>
+        Many of them you've surely heard of- but we've also included a few obscure movies that we got the rights to for practically nothing. Enjoy!
+      </div>
+    </div>,
+    "HTML7": <div>
+      <div>
+        From August 17th through August 23rd, the following sales are in effect:
+      </div>
+      <div>
+        -Horror movie digital viewings are 30% off
+      </div>
+      <div>
+        -Horror movie tickets are 30% off
+      </div>
+      <div>
+        -Horror movie tickets booked at least two days in advance are 50% off!
+      </div>
+      <div>
+        -If you bring at least 3 friends, the tickets are a further 20% off!
+      </div>
+      <div>
+        You know what to do!
+      </div>
+    </div>,
+    "HTML8": <div>
+      <div>
+        Head on over to the store and you can get a variety of shirts with our brand on it!
+      </div>
+      <div>
+        Over 20 colors, and in all sizes!
+      </div>
+      <div>
+        For every shirt you buy, you'll get a 10% off coupon for movie tickets!
+      </div>
+    </div>,
+    "HTML9": <div>
+      <div>
+        We're welcoming Jace and Jesse as new hires for our Portland location!
+      </div>
+      <div>
+        Vanessa, our movie super-expert, is moving from our Portland location to our Spokane location. If you need to ask her questions, too bad!
+      </div>
+    </div>,
+  },
+  "articleList": Array [
+    Object {
+      "Date": 2020-10-10T07:00:00.000Z,
+      "PreviewText": "Ever wonder if horror movies are more popular than romance movies?  These August movie sales will tell the truth!",
+      "Sections": Array [
+        "HTML1",
+        "GraphArranged_Genres_August",
+        "HTML2",
+      ],
+      "TitleText": "Interactive Data",
+    },
+    Object {
+      "Date": 2020-10-06T07:00:00.000Z,
+      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
+      "Sections": Array [
+        "HTML3",
+        "Form1",
+      ],
+      "TitleText": "Sign up for a special screening!",
+    },
+    Object {
+      "Date": 2020-10-05T07:00:00.000Z,
+      "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
+      "Sections": Array [
+        "HTML5",
+      ],
+      "TitleText": "Updated Rules on Bringing Pets",
+    },
+    Object {
+      "Date": 2020-10-01T07:00:00.000Z,
+      "PreviewText": "What could be better than cheap movies on the weekend?",
+      "Sections": Array [
+        "HTML4",
+      ],
+      "TitleText": "30% off Tickets on September 5th!",
+    },
+    Object {
+      "Date": 2020-09-25T07:00:00.000Z,
+      "PreviewText": "We've added a lot of 1970s classics to our digital library!",
+      "Sections": Array [
+        "HTML6",
+      ],
+      "TitleText": "Several 1970s movies available!",
+    },
+    Object {
+      "Date": 2020-09-15T07:00:00.000Z,
+      "PreviewText": "For horror week, you can save big! Click here to find out more!",
+      "Sections": Array [
+        "HTML7",
+      ],
+      "TitleText": "Horror Week Sale!",
+    },
+    Object {
+      "Date": 2020-09-09T07:00:00.000Z,
+      "PreviewText": "You love us, right? Then wear a t-shirt with our logo on it! You'll get a ticket discount!",
+      "Sections": Array [
+        "HTML8",
+      ],
+      "TitleText": "T-Shirts with your favorite brand!",
+    },
+    Object {
+      "Date": 2020-09-02T07:00:00.000Z,
+      "PreviewText": "We've got some new hires, and some staff relocating.",
+      "Sections": Array [
+        "HTML9",
+      ],
+      "TitleText": "Staff Changes",
+    },
+  ],
+  "currentArticle": Array [
+    "HTML1",
+    "GraphArranged_Genres_August",
+    "HTML2",
+    "HTML5",
+    "GraphDate_Week2_August",
+    "GraphArranged_Genres_August",
+    "HTML3",
+  ],
+  "currentGraphs": Array [
+    Array [
+      "GraphGenre_Action_August",
+      "GraphArranged_Genres_August",
+    ],
+    Array [
+      "GraphArranged_Genres_August",
+      "GraphDate_Week3_August",
+    ],
+    Array [
+      "GraphMovie_Byrnadel_August",
+      "GraphArranged_Genres_August",
+    ],
+  ],
+  "formList": Array [
+    <Formik
+      initialValues={
+        Object {
+          "email": "",
+        }
+      }
+      onSubmit={[Function]}
+      validationSchema={
+        ObjectSchema {
+          "_blacklist": RefSet {
+            "list": Set {},
+            "refs": Map {},
+          },
+          "_conditions": Array [],
+          "_defaultDefault": [Function],
+          "_deps": Array [],
+          "_excludedEdges": Array [],
+          "_exclusive": Object {},
+          "_mutate": undefined,
+          "_nodes": Array [
+            "email",
+          ],
+          "_options": Object {
+            "abortEarly": true,
+            "recursive": true,
+          },
+          "_type": "object",
+          "_typeError": [Function],
+          "_whitelist": RefSet {
+            "list": Set {},
+            "refs": Map {},
+          },
+          "fields": Object {
+            "email": StringSchema {
+              "_blacklist": RefSet {
+                "list": Set {},
+                "refs": Map {},
+              },
+              "_conditions": Array [],
+              "_deps": Array [],
+              "_exclusive": Object {
+                "email": false,
+                "required": true,
+              },
+              "_mutate": undefined,
+              "_options": Object {
+                "abortEarly": true,
+                "recursive": true,
+              },
+              "_type": "string",
+              "_typeError": [Function],
+              "_whitelist": RefSet {
+                "list": Set {},
+                "refs": Map {},
+              },
+              "tests": Array [
+                [Function],
+                [Function],
+              ],
+              "transforms": Array [
+                [Function],
+              ],
+              "type": "string",
+            },
+          },
+          "tests": Array [],
+          "transforms": Array [
+            [Function],
+          ],
+          "type": "object",
+        }
+      }
+    >
+      [Function]
+    </Formik>,
+  ],
+  "graphList": Object {
+    "GraphArranged_Genres_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 400,
+        },
+        Object {
+          "name": "Action",
+          "sales": 700,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 600,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 650,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 550,
+        },
+      ],
+      "key": "sales",
+      "title": "August Sales By Genre",
+    },
+    "GraphDate_Week1_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 150,
+        },
+        Object {
+          "name": "Action",
+          "sales": 350,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 150,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 120,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 100,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 1 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week2_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 70,
+        },
+        Object {
+          "name": "Action",
+          "sales": 150,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 250,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 300,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 100,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 2 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week3_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 80,
+        },
+        Object {
+          "name": "Action",
+          "sales": 100,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 100,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 120,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 150,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 3 of August's Movie Sales by Genre",
+    },
+    "GraphDate_Week4_August": Object {
+      "data": Array [
+        Object {
+          "name": "Horror",
+          "sales": 100,
+        },
+        Object {
+          "name": "Action",
+          "sales": 100,
+        },
+        Object {
+          "name": "Romance",
+          "sales": 100,
+        },
+        Object {
+          "name": "Comedy",
+          "sales": 110,
+        },
+        Object {
+          "name": "Drama",
+          "sales": 200,
+        },
+      ],
+      "key": "sales",
+      "title": "Week 4 of August's Movie Sales by Genre",
+    },
+    "GraphGenre_Action_August": Object {
+      "data": Array [
+        Object {
+          "name": "Byrnadel's Squadron",
+          "sales": 250,
+        },
+        Object {
+          "name": "Explosion fest",
+          "sales": 100,
+        },
+        Object {
+          "name": "The Hero from the Forest",
+          "sales": 110,
+        },
+        Object {
+          "name": "Dragons vs Dinosaurs",
+          "sales": 120,
+        },
+        Object {
+          "name": "Large Robots",
+          "sales": 125,
+        },
+      ],
+      "key": "sales",
+      "title": "Action Movie Sales in August",
+    },
+    "GraphGenre_Comedy_August": Object {
+      "data": Array [
+        Object {
+          "name": "Rusty's Wedding",
+          "sales": 240,
+        },
+        Object {
+          "name": "Little Salad Spinners",
+          "sales": 100,
+        },
+        Object {
+          "name": "One Shot To Go",
+          "sales": 110,
+        },
+        Object {
+          "name": "Meet The Gorgon Family",
+          "sales": 210,
+        },
+      ],
+      "key": "sales",
+      "title": "Comedy Movie Sales in August",
+    },
+    "GraphGenre_Drama_August": Object {
+      "data": Array [
+        Object {
+          "name": "Steel and Light",
+          "sales": 100,
+        },
+        Object {
+          "name": "Daniel Lighto",
+          "sales": 140,
+        },
+        Object {
+          "name": "The Baritones",
+          "sales": 80,
+        },
+        Object {
+          "name": "Inara's Mind",
+          "sales": 150,
+        },
+      ],
+      "key": "sales",
+      "title": "Drama Movie Sales in August",
+    },
+    "GraphGenre_Horror_August": Object {
+      "data": Array [
+        Object {
+          "name": "The Nosferatu of Wall Street",
+          "sales": 60,
+        },
+        Object {
+          "name": "Dead Universe",
+          "sales": 90,
+        },
+        Object {
+          "name": "Empty Woods",
+          "sales": 100,
+        },
+        Object {
+          "name": "The New Jersey Folding Chair Massacre",
+          "sales": 130,
+        },
+      ],
+      "key": "sales",
+      "title": "Horror Movie Sales in August",
+    },
+    "GraphGenre_Romance_August": Object {
+      "data": Array [
+        Object {
+          "name": "Outcasts In Love",
+          "sales": 70,
+        },
+        Object {
+          "name": "Serene Nights",
+          "sales": 65,
+        },
+        Object {
+          "name": "Too Many Satyrs",
+          "sales": 140,
+        },
+        Object {
+          "name": "Looking At Him",
+          "sales": 80,
+        },
+        Object {
+          "name": "Seductive Merman",
+          "sales": 200,
+        },
+      ],
+      "key": "sales",
+      "title": "Romance Movie Sales in August",
+    },
+    "GraphMovie_Baritones_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "The Baritones's Sales in August",
+    },
+    "GraphMovie_Byrnadel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 30,
+        },
+      ],
+      "key": "sales",
+      "title": "Byrnadel's Squadron's Sales in August",
+    },
+    "GraphMovie_Daniel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 40,
+        },
+      ],
+      "key": "sales",
+      "title": "Daniel Lighto's Sales in August",
+    },
+    "GraphMovie_Dead_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "Dead Universe's Sales in August",
+    },
+    "GraphMovie_Dragons_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Dragons vs Dinosaurs's Sales in August",
+    },
+    "GraphMovie_Empty_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 80,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Empty Woods's Sales in August",
+    },
+    "GraphMovie_Explosion_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 90,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 4,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 3,
+        },
+      ],
+      "key": "sales",
+      "title": "Explosionfest's Sales in August",
+    },
+    "GraphMovie_Gorgon_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "Meet The Gorgon Family's Sales in August",
+    },
+    "GraphMovie_Hero_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "The Hero from the Forest's Sales in August",
+    },
+    "GraphMovie_Inara_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 50,
+        },
+      ],
+      "key": "sales",
+      "title": "Inara's Mind's Sales in August",
+    },
+    "GraphMovie_Jersey_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "The New Jersey Folding Chair Massacre's Sales in August",
+    },
+    "GraphMovie_Looking_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 1,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 7,
+        },
+      ],
+      "key": "sales",
+      "title": "Looking At Him's Sales in August",
+    },
+    "GraphMovie_Merman_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 70,
+        },
+      ],
+      "key": "sales",
+      "title": "Seductive Merman's Sales in August",
+    },
+    "GraphMovie_Nosferatu_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 10,
+        },
+      ],
+      "key": "sales",
+      "title": "The Nosferatu of Wall Street's Sales in August",
+    },
+    "GraphMovie_OneShot_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 40,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 30,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 30,
+        },
+      ],
+      "key": "sales",
+      "title": "One Shot To Go's Sales in August",
+    },
+    "GraphMovie_Outcasts_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 5,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 25,
+        },
+      ],
+      "key": "sales",
+      "title": "Outcasts In Love's Sales in August",
+    },
+    "GraphMovie_Robots_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 115,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 5,
+        },
+      ],
+      "key": "sales",
+      "title": "Large Robots's Sales in August",
+    },
+    "GraphMovie_Rusty_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 100,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 70,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 60,
+        },
+      ],
+      "key": "sales",
+      "title": "Rusty's Wedding's Sales in August",
+    },
+    "GraphMovie_Salad_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 40,
+        },
+      ],
+      "key": "sales",
+      "title": "Little Salad Spinners's Sales in August",
+    },
+    "GraphMovie_Satyrs_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 50,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 20,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 20,
+        },
+      ],
+      "key": "sales",
+      "title": "Too Many Satyrs's Sales in August",
+    },
+    "GraphMovie_Serene_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 45,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 2,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 3,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 15,
+        },
+      ],
+      "key": "sales",
+      "title": "Serene Nights's Sales in August",
+    },
+    "GraphMovie_Steel_August": Object {
+      "data": Array [
+        Object {
+          "name": "Week 1",
+          "sales": 60,
+        },
+        Object {
+          "name": "Week 2",
+          "sales": 10,
+        },
+        Object {
+          "name": "Week 3",
+          "sales": 15,
+        },
+        Object {
+          "name": "Week 4",
+          "sales": 15,
+        },
+      ],
+      "key": "sales",
+      "title": "Steel and Light's Sales in August",
+    },
+  },
+  "section": "Article",
+  "transition": false,
+}
+`;
