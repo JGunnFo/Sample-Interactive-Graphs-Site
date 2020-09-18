@@ -67,9 +67,9 @@ class XAxisTick extends React.Component {
   render () {
     const {x, y, payload} = this.props;
 		
-   	return ( <foreignObject className="Graph-X-Axis-Foreign" x={x-40} y={y} width={75} height={30} textAnchor="middle"   verticalAnchor="start">
+   	return ( <foreignObject className="Graph-X-Axis-Foreign" x={x-40} y={y} width={75} height={30} >
     <div aria-hidden="true">
-     <Text>{payload.value}</Text>
+     <Text >{payload.value}</Text>
      </div>
      </foreignObject>
      )
@@ -81,7 +81,7 @@ class YAxisTick extends React.Component {
   render () {
     const {x, y, payload} = this.props;
 		
-   	return ( <foreignObject className="Graph-Y-Axis-Foreign" x={x-23} y={y-8} width={24} height={20} textAnchor="middle"   verticalAnchor="start">
+   	return ( <foreignObject className="Graph-Y-Axis-Foreign" x={x-23} y={y-8} width={24} height={20} >
     <div aria-hidden="true">
      <Text>{payload.value}</Text>
      </div>
@@ -109,7 +109,7 @@ const screenReaderBar = (inheritPass) => {
   const { x, y, width, height, value } = inheritPass;
 
   return (
-    <foreignObject  x={x+15} y={y} width="33" height="20" >
+    <foreignObject className="antipointer" x={x} y={y} width={width} height={height} >
     <button  aria-live="off" role="button" className="Screen-Reader-Button"  onClick={() => {props.dispatch(GraphClick(inheritPass, graphNumber))}} fill="#8884d8" >
     <div aria-hidden="true">{value}</div>
       <div className="Screenreader-Only" >Instructions</div>
@@ -120,15 +120,15 @@ const screenReaderBar = (inheritPass) => {
 
   const renderChart = (
     <ResponsiveContainer  width="99%" height={400}  >
-    <BarChart data={graphData}  >
+    <BarChart data={graphData}  margin={{ bottom: 20 }}>
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" interval={0}  textAnchor="middle"  tick={<XAxisTick />} />    
+          <XAxis dataKey="name" interval={0}    tick={<XAxisTick />} />    
       {/* Ideally the height would be defined via REM in css, but so far it seems that
       due to how recharts responsive container works, that may not be possible. 
       Display costs with this size setting are minimal, thankfully.*/}
     <YAxis width={30} tick={<YAxisTick />} />
-          <Bar dataKey={key} fill="#8884d8"   label={screenReaderBar}
+          <Bar dataKey={key} fill="#8884d8"   label={screenReaderBar} cursor="pointer"
           onClick = {(Bar) => {
             props.dispatch(GraphClick(Bar, graphNumber))
             }}>
