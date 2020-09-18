@@ -111,23 +111,22 @@ let title=graphInfo["title"]
 
 
 
-const screenReaderBar = (inheritPass) => {
-  console.log(JSON.stringify(inheritPass))
-  const { x, y, width, height, value } = inheritPass;
+const screenReaderButton = (currentBar) => {
+  const { x, y, width, height, value, name } = currentBar;
 
   return (
-    <foreignObject className="antipointer" x={x} y={y-18} width={width} height={height+15} >
-    <button  aria-live="off" role="button" className="Screen-Reader-Button"  onClick={() => {props.dispatch(GraphClick(inheritPass, graphNumber))}} fill="#8884d8" >
+    <foreignObject className="antipointer" x={x} y={y-18} width={width} height={height+15}>
+    <button  aria-live="off" role="button" className="Screen-Reader-Button"  onClick={() => {props.dispatch(GraphClick(currentBar, graphNumber))}} fill="#8884d8" >
     <div aria-hidden="true">{value}</div>
-      <div className="Screenreader-Only" >Instructions</div>
+      <div className="Screenreader-Only">{name}{key}:{value}Hit the enter button to receive more data about {name}{key}.</div>
       </button>
       </foreignObject>
   );
 };
 
   const renderChart = (
-    <ResponsiveContainer  width="99%" height={400}  >
-    <BarChart data={graphData}  margin={{ bottom: 20, top: 10 }}>
+    <ResponsiveContainer  width="99%" height={400} aria-label="Search"  alt="Black and white close-up photo of milkweed flowers"  >
+    <BarChart data={graphData} role="eggs" alt="Black and white close-up photo of milkweed flowers"  margin={{ bottom: 50, top: 20 }}>
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" interval={0}    tick={<XAxisTick />} />    
@@ -135,7 +134,7 @@ const screenReaderBar = (inheritPass) => {
       due to how recharts responsive container works, that may not be possible. 
       Display costs with this size setting are minimal, thankfully.*/}
     <YAxis width={30} tick={<YAxisTick />} />
-          <Bar dataKey={key} fill="#8884d8"   label={screenReaderBar} cursor="pointer"
+          <Bar dataKey={key} fill="#8884d8"   label={screenReaderButton} cursor="pointer"
           onClick = {(Bar) => {
             props.dispatch(GraphClick(Bar, graphNumber))
             }}>
@@ -144,11 +143,39 @@ const screenReaderBar = (inheritPass) => {
         </ResponsiveContainer>
   );
 
+  function screenReaderReadout(graphInfo){
+    let graphData=graphInfo["data"]
+    let key=graphInfo["key"]
+
+    let readout=[]
+    for (let i=0; i < graphData.length; i++) {readout.push(RenderReadout(graphData[i], key, i))}
+    
+    return(
+      <div><div>{readout}</div>
+      You can receive a new set of data based on each of these. Navigate the site with your keyboard until you arrive on data you want to learn more about, then hit enter. That will generate a new set of data which will be read. For example, if the Graph is "August Movie Sales by Genre" and then you select "Action sales", you will receive data about individual action movies' sales in August.</div>
+    )
+
+  }
+
+        function RenderReadout(passedPreview, key, index){
+          return(
+            <div key={index}>
+              <div>{passedPreview["name"]}  {key}: {passedPreview[key]}</div>
+            </div>
+          )
+        }
+
+
+
+
+
   return (
     <div role="presentation">
-    <div className="Graph-Title" aria-live="polite">{title}</div>
-    <div className="Readout" aria-live="polite"></div>
-    <div className="Graph-Overall">{renderChart}</div>
+      <div aria-live="polite">
+    <div className="Graph-Title" >{title}</div>
+    <div className="Screenreader-Only">{screenReaderReadout(graphInfo)}</div>
+      </div>
+    <div className="Graph-Overall" aria-label="Graph"  alt="Black and white close-up photo of milkweed flowers">{renderChart}</div>
     </div>
   )
 }
