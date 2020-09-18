@@ -76,6 +76,13 @@ class XAxisTick extends React.Component {
     }
 };
 
+/*
+Currently leaving width/height definitions in the custom tick code, rather than in styles.
+The reason for this is that the results are strange and I have not been abel to perfectly replicate them in css. 
+I would need to invest time to understand the input->output discrepancies first, especially because of issues on IOS safari.
+Plus, there is value to having them in the same place as the x/y definitions.
+*/
+
 
 class YAxisTick extends React.Component {
   render () {
@@ -109,7 +116,7 @@ const screenReaderBar = (inheritPass) => {
   const { x, y, width, height, value } = inheritPass;
 
   return (
-    <foreignObject className="antipointer" x={x} y={y} width={width} height={height} >
+    <foreignObject className="antipointer" x={x} y={y-18} width={width} height={height+15} >
     <button  aria-live="off" role="button" className="Screen-Reader-Button"  onClick={() => {props.dispatch(GraphClick(inheritPass, graphNumber))}} fill="#8884d8" >
     <div aria-hidden="true">{value}</div>
       <div className="Screenreader-Only" >Instructions</div>
@@ -120,7 +127,7 @@ const screenReaderBar = (inheritPass) => {
 
   const renderChart = (
     <ResponsiveContainer  width="99%" height={400}  >
-    <BarChart data={graphData}  margin={{ bottom: 20 }}>
+    <BarChart data={graphData}  margin={{ bottom: 20, top: 10 }}>
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" interval={0}    tick={<XAxisTick />} />    

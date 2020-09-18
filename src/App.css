@@ -232,32 +232,12 @@ relying on character limits for the content to prevent overflow issues.
 
   cursor: pointer;
   width: 100%;
+  z-index: 900;
 }
 
 
 .Screen-Reader-Button:focus{
   border: 2px solid #121212;
-}
-
-.X-Axis-Size{
-  max-width:4.6875rem;
-  max-height:1.875rem;
-  width:4.6875rem;
-  height:1.875rem;
-}
-
-
-.Y-Axis-Size{
-  max-width:1.5rem;
-  max-height:1.25rem;
-  width:1.5rem;
-  height:1.25rem;
-}
-
-
-.Axis-Inherit{
-  height: 100%;
-  width: 100%;
 }
 
 .antipointer{
