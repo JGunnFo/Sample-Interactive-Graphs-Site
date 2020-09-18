@@ -33,7 +33,7 @@ export  function sectionArticle(props){
               let graphNumber=graphNumberOverall
               return(
                 <div key={index}>
-                  <div className="Screenreader-Only">There is a graph on this page. Here is a readout of the graph's data:</div>
+                  <div className="Screenreader-Only"> Here is a readout of this page's graph:</div>
                   {chartMaker(props.graphList[props.currentGraphs[graphNumber][0]], graphNumber, props)}
                   <div className="Revert-Graph-Parent"><button className="Revert-Graph" onClick={() => {props.dispatch(ChartOrigin(graphNumber))}}>Revert Graph</button></div>
                   </div>
@@ -63,7 +63,7 @@ export  function sectionArticle(props){
   */
 
 
-class CustomizedAxisTick extends React.Component {
+class XAxisTick extends React.Component {
   render () {
     const {x, y, payload} = this.props;
 		
@@ -77,6 +77,26 @@ class CustomizedAxisTick extends React.Component {
 };
 
 
+class YAxisTick extends React.Component {
+  render () {
+    const {x, y, payload} = this.props;
+		
+   	return ( <foreignObject className="Graph-Y-Axis-Foreign" x={x-23} y={y-8} width={24} height={20} textAnchor="middle"   verticalAnchor="start">
+    <div aria-hidden="true">
+     <Text>{payload.value}</Text>
+     </div>
+     </foreignObject>
+     )
+    }
+};
+
+/*
+If you put a custom tick in recharts with a foreign object in it, it seems that it does not have the same results as 
+either settings for non-custom ticks, or a custom tick with just <text> and whatever width/height settings.
+Thus, rather specific settings for these, at least for now.
+*/
+
+
 function chartMaker(graphInfo, graphNumber, props){
 let graphData=graphInfo["data"]
 let key=graphInfo["key"]
@@ -84,16 +104,15 @@ let title=graphInfo["title"]
 
 
 
-const customFunction = (inheritPass) => {
+const screenReaderBar = (inheritPass) => {
   console.log(JSON.stringify(inheritPass))
   const { x, y, width, height, value } = inheritPass;
 
   return (
-    <foreignObject  x={x} y={y} width="50" height="50" role="img" alt="im reading this">
-    <button role="button" alt="yes im reading"  onClick={() => {props.dispatch(GraphClick(inheritPass, graphNumber))}} fill="#8884d8" >
-    <div>both</div>
-    <div aria-hidden="true">non-sr</div>
-      <div className="Screenreader-Only">Instructions</div>
+    <foreignObject  x={x+15} y={y} width="33" height="20" >
+    <button  aria-live="off" role="button" className="Screen-Reader-Button"  onClick={() => {props.dispatch(GraphClick(inheritPass, graphNumber))}} fill="#8884d8" >
+    <div aria-hidden="true">{value}</div>
+      <div className="Screenreader-Only" >Instructions</div>
       </button>
       </foreignObject>
   );
@@ -104,17 +123,15 @@ const customFunction = (inheritPass) => {
     <BarChart data={graphData}  >
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" interval={0}  tick={<CustomizedAxisTick />} height={50} />    
+          <XAxis dataKey="name" interval={0}  textAnchor="middle"  tick={<XAxisTick />} />    
       {/* Ideally the height would be defined via REM in css, but so far it seems that
       due to how recharts responsive container works, that may not be possible. 
       Display costs with this size setting are minimal, thankfully.*/}
-    <YAxis width={30} />
-          <Tooltip  />
-          <Bar dataKey={key} fill="#8884d8"   label={customFunction}
+    <YAxis width={30} tick={<YAxisTick />} />
+          <Bar dataKey={key} fill="#8884d8"   label={screenReaderBar}
           onClick = {(Bar) => {
             props.dispatch(GraphClick(Bar, graphNumber))
             }}>
-              <LabelList/>
             </Bar>
         </BarChart>
         </ResponsiveContainer>
@@ -122,7 +139,8 @@ const customFunction = (inheritPass) => {
 
   return (
     <div role="presentation">
-    <div className="Graph-Title">{title}</div>
+    <div className="Graph-Title" aria-live="polite">{title}</div>
+    <div className="Readout" aria-live="polite"></div>
     <div className="Graph-Overall">{renderChart}</div>
     </div>
   )
