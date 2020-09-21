@@ -26,7 +26,7 @@ export const initialStateReducer={
 
   
 
-export const initialStateTest={
+export const initialStateTestNews={
   section: "News",
   transition:false,
   articleList:Articles,
@@ -42,8 +42,52 @@ export const initialStateTest={
   /* current, origin. 0 is current, 1 is origin*/
 };
 
-
 export const initialStateTestAbout={
   section: "About",
-  transition:false
+  transition:false,
+  articleList:Articles,
+  currentArticle:["HTML3", "GraphArranged_Genres_August", "HTML2", "GraphDate_Week2_August", "GraphArranged_Genres_August"],
+  /*
+  ^ie the HTMLGraphList
+  v they use keys to get each
+  */
+  graphList: Graphs,
+  formList: Forms,
+  HTMLList: HTMLs,
+  currentGraphs: [ ["GraphMovie_Byrnadel_August","GraphArranged_Genres_August"], ["GraphArranged_Genres_August","GraphDate_Week3_August"], ["GraphMovie_Byrnadel_August","GraphArranged_Genres_August"]]
+  /* current, origin. 0 is current, 1 is origin*/
+};
+
+
+export const initialStateTestArticleGraphSet1={
+  section: "Article",
+  transition:false,
+  articleList:Articles,
+  currentArticle:["HTML3", "GraphArranged_Genres_August", "HTML2", "GraphDate_Week2_August", "GraphArranged_Genres_August"],
+  /*
+  ^ie the HTMLGraphList
+  v they use keys to get each
+  */
+  graphList: Graphs,
+  formList: Forms,
+  HTMLList: HTMLs,
+  currentGraphs: [ ["GraphArranged_Genres_August","GraphArranged_Genres_August"], ["GraphDate_Week2_August", "GraphDate_Week2_August"], ["GraphMovie_Byrnadel_August","GraphArranged_Genres_August"]]
+  /* current, origin. 0 is current, 1 is origin*/
+};
+
+
+export const initialStateTestArticleGraphSet2={
+  section: "Article",
+  transition:false,
+  articleList:Articles,
+  currentArticle:["HTML4", "HTML5", "GraphMovie_Outcasts_August"],
+  /*
+  ^ie the HTMLGraphList
+  v they use keys to get each
+  */
+  graphList: Graphs,
+  formList: Forms,
+  HTMLList: HTMLs,
+  currentGraphs: [ ["GraphMovie_Outcasts_August","GraphMovie_Outcasts_August"]]
+  /* current, origin. 0 is current, 1 is origin*/
 };

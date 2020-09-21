@@ -125,8 +125,8 @@ const screenReaderButton = (currentBar) => {
 };
 
   const renderChart = (
-    <ResponsiveContainer  width="99%" height={400} aria-label="Search"  alt="Black and white close-up photo of milkweed flowers"  >
-    <BarChart data={graphData} role="eggs" alt="Black and white close-up photo of milkweed flowers"  margin={{ bottom: 50, top: 20 }}>
+    <ResponsiveContainer  width="99%" height={400}  >
+    <BarChart data={graphData} margin={{ bottom: 50, top: 20 }}>
       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
       <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" interval={0}    tick={<XAxisTick />} />    
@@ -175,7 +175,7 @@ const screenReaderButton = (currentBar) => {
     <div className="Graph-Title" >{title}</div>
     <div className="Screenreader-Only">{screenReaderReadout(graphInfo)}</div>
       </div>
-    <div className="Graph-Overall" aria-label="Graph"  alt="Black and white close-up photo of milkweed flowers">{renderChart}</div>
+    <div className="Graph-Overall" aria-label="Graph">{renderChart}</div>
     </div>
   )
 }

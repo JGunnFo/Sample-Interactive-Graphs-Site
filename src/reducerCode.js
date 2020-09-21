@@ -7,6 +7,7 @@ import {createStore} from "redux";
 import produce from "immer";
 import {initialStateReducer} from './premade data/baselineState';
 import {movieNameGraphPairs} from './premade data/articles';
+import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTORIGIN, ChartOrigin} from "./Actions";
 
 
 
@@ -56,7 +57,7 @@ function WeekClicked(barName){
 export const reducer = produce((draft=initialStateReducer, action) => {
   switch (action.type) {
 
-    case "GOTO":
+    case GOTO:
       console.log("GOTO IS BEING RUN")
       console.log(JSON.stringify(JSON.stringify(draft.Section)))
       console.log(JSON.stringify(draft.currentArticle))
@@ -75,9 +76,22 @@ export const reducer = produce((draft=initialStateReducer, action) => {
 
 
 
-    case "GRAPHCLICK":
-      console.log("GRAPHCLICK IS BEING RUN")
-      console.log(draft.currentGraphs[action.payload[1]][0].slice(0,10))
+    case GRAPHCLICK:
+
+      /*
+      For each graph displayed, there are a pair of graph strings.
+      The former is the graph data currently being displayed, and the latter is the
+      graph data that the graph first displays when the article is first clicked,
+      since the data being displayed can change via interaciton.
+
+      This takes the graph number provided by the dispatch and uses it to check the
+      correct slot, and then based on the graph in that slot, and based on the
+      bar that was clicked on, it changes the graph to the next appropriate data, 
+      such as going from
+      "Here's a bunch of horror movies" 
+      to clicking on a specific horror movie to change the graph to 
+      "Here is this horror movie's sales by week."
+      */
 
       if (draft.currentGraphs[action.payload[1]][0]==="GraphArranged_Genres_August" || draft.currentGraphs[action.payload[1]][0].slice(0,9)==="GraphDate" ){
         draft.currentGraphs[action.payload[1]][0]=GenreClicked(action.payload[0]["name"])
@@ -101,7 +115,7 @@ export const reducer = produce((draft=initialStateReducer, action) => {
 
 
 
-    case "ARTICLECLICK":
+    case ARTICLECLICK:
     console.log("ARTICLECLICK IS BEING RUN")
     draft.currentGraphs=[]
 
@@ -126,7 +140,7 @@ export const reducer = produce((draft=initialStateReducer, action) => {
     and not objects {} so that order is preserved
     */
 
-    case "CHARTORIGIN":
+    case CHARTORIGIN:
       console.log("CHARTORIGIN IS BEING RUN")
       console.log(action.payload)
     draft.currentGraphs[action.payload][0]=draft.currentGraphs[action.payload][1]
