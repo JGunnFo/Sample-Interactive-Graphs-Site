@@ -1006,3 +1006,447 @@ exports[`<App starting with News> renders correctly according to snapshot 1`] = 
   </div>
 </div>
 `;
+
+exports[`<App with its actual starting state> renders correctly according to snapshot 1`] = `
+<div
+  className="Overall-Parent"
+>
+  <div>
+    <div>
+      <div>
+        <div
+          className="Nav-Flex-Parent"
+          role="navigation"
+        >
+          <div>
+            <div
+              className=""
+            >
+              <div>
+                <button
+                  className="Button-Unset"
+                  onClick={[Function]}
+                >
+                  News
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className="Nav-Selected"
+            >
+              <div>
+                <button
+                  className="Button-Unset"
+                  onClick={[Function]}
+                >
+                  Article
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className=""
+            >
+              <div>
+                <button
+                  className="Button-Unset"
+                  onClick={[Function]}
+                >
+                  About
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <a
+                aria-label="Github Link"
+                className="Nav-Link"
+                href="https://github.com/JGunnFo?tab=repositories"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-live="polite"
+  >
+    <div>
+      <div>
+        <div
+          role="main"
+        >
+          <div
+            className="Article-Parent"
+          >
+            <div>
+              <div>
+                <div
+                  className="Article-HTML-Segment"
+                >
+                  <div
+                    aria-hidden="true"
+                  >
+                    Click on any of the bars in the graph to view more of the data!
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="Screenreader-Only"
+                  >
+                     Here is a readout of this page's graph:
+                  </div>
+                  <div
+                    role="presentation"
+                  >
+                    <div
+                      aria-live="polite"
+                    >
+                      <div
+                        className="Graph-Title"
+                      >
+                        Action Movie Sales in August
+                      </div>
+                      <div
+                        className="Screenreader-Only"
+                      >
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                Byrnadel's Squadron
+                                  
+                                sales
+                                : 
+                                250
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Explosion fest
+                                  
+                                sales
+                                : 
+                                100
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                The Hero from the Forest
+                                  
+                                sales
+                                : 
+                                110
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Dragons vs Dinosaurs
+                                  
+                                sales
+                                : 
+                                120
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Large Robots
+                                  
+                                sales
+                                : 
+                                125
+                              </div>
+                            </div>
+                          </div>
+                          You can receive a new set of data based on each of these. Navigate the site with your keyboard until you arrive on data you want to learn more about, then hit enter. That will generate a new set of data which will be read. For example, if the Graph is "August Movie Sales by Genre" and then you select "Action sales", you will receive data about individual action movies' sales in August.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-label="Graph"
+                      className="Graph-Overall"
+                    >
+                      <div
+                        className="recharts-responsive-container"
+                        id="undefined"
+                        style={
+                          Object {
+                            "height": 400,
+                            "maxHeight": undefined,
+                            "minHeight": undefined,
+                            "minWidth": undefined,
+                            "width": "99%",
+                          }
+                        }
+                      >
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="Revert-Graph-Parent"
+                  >
+                    <button
+                      className="Revert-Graph"
+                      onClick={[Function]}
+                    >
+                      Revert Graph
+                    </button>
+                  </div>
+                </div>
+                <div
+                  className="Article-HTML-Segment"
+                >
+                  <div>
+                    If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+                  </div>
+                </div>
+                <div
+                  className="Article-HTML-Segment"
+                >
+                  <div>
+                    <div>
+                      Here at Fictional Movie Business, we've gone to great extents to allow people to bring all of their pets to our theaters, including immense effort to install animal-only areas and to provide trained staff to make sure nothing goes wrong. We love to see all your dogs, cats, lizards, alpacas, ferrets, and everything else!
+                    </div>
+                    <div>
+                      <br />
+                      However, for you to have a safe and pleasant moviegoing experience, we have added 3 new rules:
+                    </div>
+                    <div>
+                      -All animals must be at least a year old, so that they have any hope of obeying rules.
+                    </div>
+                    <div>
+                      -If the movie is 3 hours or longer, you must bring snacks for our staff to feed to your pet.
+                    </div>
+                    <div>
+                      -No leash, no service.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="Screenreader-Only"
+                  >
+                     Here is a readout of this page's graph:
+                  </div>
+                  <div
+                    role="presentation"
+                  >
+                    <div
+                      aria-live="polite"
+                    >
+                      <div
+                        className="Graph-Title"
+                      >
+                        August Sales By Genre
+                      </div>
+                      <div
+                        className="Screenreader-Only"
+                      >
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                Horror
+                                  
+                                sales
+                                : 
+                                400
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Action
+                                  
+                                sales
+                                : 
+                                700
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Romance
+                                  
+                                sales
+                                : 
+                                600
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Comedy
+                                  
+                                sales
+                                : 
+                                650
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Drama
+                                  
+                                sales
+                                : 
+                                550
+                              </div>
+                            </div>
+                          </div>
+                          You can receive a new set of data based on each of these. Navigate the site with your keyboard until you arrive on data you want to learn more about, then hit enter. That will generate a new set of data which will be read. For example, if the Graph is "August Movie Sales by Genre" and then you select "Action sales", you will receive data about individual action movies' sales in August.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-label="Graph"
+                      className="Graph-Overall"
+                    >
+                      <div
+                        className="recharts-responsive-container"
+                        id="undefined"
+                        style={
+                          Object {
+                            "height": 400,
+                            "maxHeight": undefined,
+                            "minHeight": undefined,
+                            "minWidth": undefined,
+                            "width": "99%",
+                          }
+                        }
+                      >
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="Revert-Graph-Parent"
+                  >
+                    <button
+                      className="Revert-Graph"
+                      onClick={[Function]}
+                    >
+                      Revert Graph
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="Screenreader-Only"
+                  >
+                     Here is a readout of this page's graph:
+                  </div>
+                  <div
+                    role="presentation"
+                  >
+                    <div
+                      aria-live="polite"
+                    >
+                      <div
+                        className="Graph-Title"
+                      >
+                        Byrnadel's Squadron's Sales in August
+                      </div>
+                      <div
+                        className="Screenreader-Only"
+                      >
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                Week 1
+                                  
+                                sales
+                                : 
+                                100
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Week 2
+                                  
+                                sales
+                                : 
+                                70
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Week 3
+                                  
+                                sales
+                                : 
+                                50
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                Week 4
+                                  
+                                sales
+                                : 
+                                30
+                              </div>
+                            </div>
+                          </div>
+                          You can receive a new set of data based on each of these. Navigate the site with your keyboard until you arrive on data you want to learn more about, then hit enter. That will generate a new set of data which will be read. For example, if the Graph is "August Movie Sales by Genre" and then you select "Action sales", you will receive data about individual action movies' sales in August.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      aria-label="Graph"
+                      className="Graph-Overall"
+                    >
+                      <div
+                        className="recharts-responsive-container"
+                        id="undefined"
+                        style={
+                          Object {
+                            "height": 400,
+                            "maxHeight": undefined,
+                            "minHeight": undefined,
+                            "minWidth": undefined,
+                            "width": "99%",
+                          }
+                        }
+                      >
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="Revert-Graph-Parent"
+                  >
+                    <button
+                      className="Revert-Graph"
+                      onClick={[Function]}
+                    >
+                      Revert Graph
+                    </button>
+                  </div>
+                </div>
+                <div
+                  className="Article-HTML-Segment"
+                >
+                  <div>
+                    <div>
+                      In October we will be holding preview screenings for 6 different upcoming movies! 
+                    </div>
+                    <div>
+                      Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -5,7 +5,7 @@ import configureMockStore from 'redux-mock-store';
 import { Provider } from "react-redux";
 import { render } from '@testing-library/react';
 import TopComponent from './App';
-import {initialStateTestNews, initialStateTestAbout, initialStateTestArticleGraphSet1, initialStateTestArticleGraphSet2} from './premade data/baselineState';
+import {initialStateTestNews, initialStateTestAbout, initialStateTestArticleGraphSet1, initialStateTestArticleGraphSet2, initialStateReducer} from './premade data/baselineState';
 import ReactTestUtils from 'react-dom/test-utils'; // ES6
 
 
@@ -62,6 +62,7 @@ it('renders correctly according to snapshot', () => {
 
 }
 
+genericSnapshotTestFunction('<App with its actual starting state>', initialStateReducer)
 genericSnapshotTestFunction('<App starting with News>', initialStateTestNews)
 genericSnapshotTestFunction('<App starting with About>', initialStateTestAbout)
 genericSnapshotTestFunction('<App starting with Article Graph Set 1>', initialStateTestArticleGraphSet1)
