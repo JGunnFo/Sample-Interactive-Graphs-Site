@@ -10,12 +10,6 @@ import ReactTestUtils from 'react-dom/test-utils'; // ES6
 
 
 
-/*
-The "click on any of the bars below..." line will not show up in the snapshots before graphs
-unless HTML1 is included as well, so don't be surprised by that.
-Maybe that should be moved to being part of the ChartMaker function, 
-but for now it is unimportant and longterm it is ambiguous.
-*/
 
 function genericSnapshotTestFunction(name, initialState){
 

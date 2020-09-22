@@ -204,10 +204,7 @@ exports[`<App starting with Article Graph Set 1> renders correctly according to 
                 >
                   <div>
                     <div>
-                      In October we will be holding preview screenings for 6 different upcoming movies! 
-                    </div>
-                    <div>
-                      Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
+                      On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
                     </div>
                   </div>
                 </div>
@@ -861,27 +858,6 @@ exports[`<App starting with News> renders correctly according to snapshot 1`] = 
                       <div
                         className="News-Title-Text"
                       >
-                        Sign up for a special screening!
-                      </div>
-                      <div
-                        className="News-Preview-Text"
-                      >
-                        If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!
-                      </div>
-                    </div>
-                  </button>
-                </div>
-                <div>
-                  <button
-                    className="Button-Unset News-Square-Button"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="News-Square-Div"
-                    >
-                      <div
-                        className="News-Title-Text"
-                      >
                         Updated Rules on Bringing Pets
                       </div>
                       <div
@@ -1434,10 +1410,10 @@ exports[`<App with its actual starting state> renders correctly according to sna
                 >
                   <div>
                     <div>
-                      In October we will be holding preview screenings for 6 different upcoming movies! 
+                      It's a blast from the past! We've added FORTY movies from the 1970s to our digital store!
                     </div>
                     <div>
-                      Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
+                      Many of them you've surely heard of- but we've also included a few obscure movies that we got the rights to for practically nothing. Enjoy!
                     </div>
                   </div>
                 </div>

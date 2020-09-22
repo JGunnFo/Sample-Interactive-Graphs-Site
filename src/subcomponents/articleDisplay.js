@@ -48,18 +48,17 @@ export  function sectionArticle(props){
   graphList is where we get the graph data itself.
   currentGraphs is a list of what graphs the current article is rendering, and what it rendered at first
   before the graph was navigated.
-  so currentGraphs[#][0] is what is currently displayed for that graph, and [#][1] is what it first showed.
+  so currentGraphs[#][0] is what is currently displayed for that graph, and [#][1] is what it first showed, the "origin".
 
   There's no big reasons for it to be this way,
   but basically the data for articles is ordered like HTML1, Graph1, HTML2, Graph2
   so that the order of rendering is implicit in the data-
-  and i decided i'd like it ab it more if currentGraph kept the reference for what the original graph it was right there-
+  and i decided it was convenient if currentGraph kept the reference for what the original graph it was right there-
   rather htan, say, "OK, go to articleData[3] because that corresponds to our graph's origin".
 
   There may be a cleaner way to store these things while retaining order, making references a bit easier,
-  keeping article data in its own place, and keeping all graph data in one place,
-  but for now, leaving it this awy
-  ^eh, dont want another "leaving it htis way" comment, but not for myself at least that those are hte concenrs
+  keeping article data in its own place, and keeping all graph data in one place, 
+  but this way will suffice for now.
   */
 
 
@@ -78,9 +77,12 @@ class XAxisTick extends React.Component {
 
 /*
 Currently leaving width/height definitions in the custom tick code, rather than in styles.
-The reason for this is that the results are strange and I have not been abel to perfectly replicate them in css. 
-I would need to invest time to understand the input->output discrepancies first, especially because of issues on IOS safari.
-Plus, there is value to having them in the same place as the x/y definitions.
+The reason for this is that the results are strange in recharts and I have not been able to perfectly replicate them in css. 
+If you put a custom tick in recharts with a foreign object in it, it seems that it does not have the same visual results as 
+either settings for non-custom ticks, or a custom tick with just <text> and whatever width/height settings.
+
+This may be able to be changed after I better understand the input->output discrepancies, especially because of issues on IOS safari.
+But for now, at least there is value to having the width/height in the same place as the x/y definitions.
 */
 
 
@@ -97,11 +99,6 @@ class YAxisTick extends React.Component {
     }
 };
 
-/*
-If you put a custom tick in recharts with a foreign object in it, it seems that it does not have the same results as 
-either settings for non-custom ticks, or a custom tick with just <text> and whatever width/height settings.
-Thus, rather specific settings for these, at least for now.
-*/
 
 
 function chartMaker(graphInfo, graphNumber, props){
@@ -134,6 +131,7 @@ const screenReaderButton = (currentBar) => {
       due to how recharts responsive container works, that may not be possible. 
       Display costs with this size setting are minimal, thankfully.*/}
     <YAxis width={30} tick={<YAxisTick />} />
+    <Tooltip />
           <Bar dataKey={key} fill="#8884d8"   label={screenReaderButton} cursor="pointer"
           onClick = {(Bar) => {
             props.dispatch(GraphClick(Bar, graphNumber))

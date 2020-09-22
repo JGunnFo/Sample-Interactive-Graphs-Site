@@ -46,30 +46,42 @@ html {
 }
 
 
-.Article-Parent{
+
+
+/* ----- Button Universal ----- */ 
+
+/*
+Would perhaps use unset itself, but it causes issues with IOS safari in some cases.
+*/
+
+.Button-Unset{
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  display: block;
+  text-align: left;
+
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
 }
 
-.Article-HTML-Segment{
-  display: grid;
-  font-size: 1.25rem;
-  justify-content: center;
-  margin: 0rem 0.75rem 0rem 0.75rem;
-  line-height: 1.75rem;
-  color: #1d1d1d;
+
+.Button-Unset:hover{
+  color: purple;
 }
 
-.Article-HTML-Segment > div {
-  max-width: 50rem;
-  margin-bottom: 0.75rem;
+.Button-Unset:visited{
+  color: purple;
 }
 
-.Article-HTML-Segment > div > div {
-  margin-bottom: 0.5rem;
-}
-
-/* ----- Top Section----- */ 
 
 
+/* ----- Navbar ----- */ 
 
 
 .Nav-Flex-Parent{
@@ -117,6 +129,11 @@ color its underline on hover as well, unlike the other navbar elements.
 
 
 
+
+
+/* ----- News ----- */ 
+
+
 .News-Grid-Parent{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -126,35 +143,6 @@ color its underline on hover as well, unlike the other navbar elements.
   margin-right: 0.5rem;
 }
 
-
-/*
-Would perhaps use unset itself, but it causes issues with IOS safari in some cases.
-*/
-
-.Button-Unset{
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  text-decoration: inherit;
-  display: block;
-  text-align: left;
-
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-}
-
-
-.Button-Unset:hover{
-  color: purple;
-}
-
-.Button-Unset:visited{
-  color: purple;
-}
 
 .News-Square-Button{
   border-left: 1px solid gray;
@@ -201,8 +189,9 @@ inside News-Square instead.
 
 
 /*
-No size restriction such as hiding overflow etc, 
-relying on character limits for the content to prevent overflow issues.
+No size restriction such as hiding overflow etc, currently relying
+on character limits for the content to prevent overflow issues,
+such as limits that would be enforced by a database.
 */
 
 .News-Preview-Text{
@@ -217,26 +206,33 @@ relying on character limits for the content to prevent overflow issues.
 
 
 
-.Screen-Reader-Button{
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: inherit;
-  font-size: inherit;
-  color: #121212;
-  text-decoration: inherit;
-  display: block;
-  text-align: center;
+/* ----- Article ----- */ 
 
-  cursor: pointer;
-  width: 100%;
-  z-index: 900;
+.Article-Parent{
+}
+
+.Article-HTML-Segment{
+  display: grid;
+  font-size: 1.25rem;
+  justify-content: center;
+  margin: 0rem 0.75rem 0rem 0.75rem;
+  line-height: 1.75rem;
+  color: #1d1d1d;
+}
+
+.Article-HTML-Segment > div {
+  max-width: 50rem;
+  margin-bottom: 0.75rem;
+}
+
+.Article-HTML-Segment > div > div {
+  margin-bottom: 0.5rem;
 }
 
 
-.Screen-Reader-Button:focus{
-  border: 2px solid #121212;
-}
+
+
+/* ----- Graph ----- */ 
 
 .antipointer{
   pointer-events: none
@@ -333,6 +329,30 @@ The styles below are modifications for recharts's built in styles.
 
 
 
+
+/* ----- Screenreader Content----- */ 
+
+.Screen-Reader-Button{
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: #121212;
+  text-decoration: inherit;
+  display: block;
+  text-align: center;
+
+  cursor: pointer;
+  width: 100%;
+  z-index: 900;
+}
+
+
+.Screen-Reader-Button:focus{
+  border: 2px solid #121212;
+}
+
 .Screenreader-Only{
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -343,6 +363,11 @@ The styles below are modifications for recharts's built in styles.
   padding: 0;
   position: absolute;
 }
+
+
+
+
+/* ----- Responsive Styling----- */ 
 
 
 @media (min-width:900px) and (min-height: 800px){
@@ -377,13 +402,16 @@ The styles below are modifications for recharts's built in styles.
   line-height: 1.75rem;
 }
 
+
+.recharts-default-tooltip{
+  display: none;
+}
+
+.recharts-tooltip-cursor{
+  display: none;
+}
+
 }
 
 
 
-@media (max-width:460px){
-
-
-
-
-}

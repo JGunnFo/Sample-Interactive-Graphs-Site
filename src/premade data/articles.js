@@ -1,12 +1,19 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-
 /*
-imo make the concatenated list of graphs *an object*, beacuse i htink we will want name-based access rather than index based
-especially because that makes traversal across a series of graphs more legible
+Currently, the data is based off an imported file rather than a database. 
+This will be shifted to a database in the future once additional features 
+and structures are committed to which will more strictly determine the shape 
+of the data and reducer logic.  For the first version, I opted for creating 
+the data quickly and not ending up overcommitted to a structure, especially 
+since longterm specialization will define needs more. 
+
+Questions like "Which complexities are stored in the reducer, 
+and which in the data?" depends on undetermined specifics, 
+so I avoided committing for now.
 */
+
 
 const article1={
     TitleText: "Interactive Data",
@@ -22,97 +29,11 @@ const GraphArranged_Genres_August = {
   title: "August Sales By Genre", 
   key: "sales" 
 };
-/*MAKE SURE this is correct either as array or as object idk whichever is approrpiate
-arrays vs objects..*/
+
 const HTML2 = <div>If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!</div>
 
 
 
-
-const article2={
-    TitleText: "Sign up for a special screening!",
-    PreviewText: "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
-    Date: new Date(2020, 9, 6),
-    Sections: ["HTML3", "Form1"]
-    };
-
-    
-const HTML3 = <div><div>In October we will be holding preview screenings for 6 
-different upcoming movies! </div>
-<div>Fill out the form below with the absolutely not fake email that you use for your 
-  Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, 
-  and we'll get back to you soon!</div></div>;
-
-
-/* be aware that this is a function, so theres a difference between Form1 and Form1(), reference vs call*/
-function Form1(){
-    return(
-
-      <Formik
-      initialValues={{ email: "" }}
-      onSubmit={async values => {
-        await new Promise(resolve => setTimeout(resolve, 500));
-        alert(JSON.stringify(values, null, 2));
-      }}
-      validationSchema={Yup.object().shape({
-        email: Yup.string()
-          .email()
-          .required("Required")
-      })}
-    >
-      {props => {
-        const {
-          values,
-          touched,
-          errors,
-          dirty,
-          isSubmitting,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          handleReset
-        } = props;
-        return (
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="email" style={{ display: "block" }}>
-              Email
-            </label>
-            <input
-              id="email"
-              placeholder="Enter your email"
-              type="text"
-              value={values.email}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              className={
-                errors.email && touched.email
-                  ? "text-input error"
-                  : "text-input"
-              }
-            />
-            {errors.email && touched.email && (
-              <div className="input-feedback">{errors.email}</div>
-            )}
-
-            <button
-              type="button"
-              className="outline"
-              onClick={handleReset}
-              disabled={!dirty || isSubmitting}
-            >
-              Reset
-            </button>
-            <button type="submit" disabled={isSubmitting}>
-              Submit
-            </button>
-
-          </form>
-        );
-      }}
-    </Formik>
-    );
-  }
-  
 
 
 
@@ -225,6 +146,16 @@ const article8={
     from our Portland location to our Spokane location. If you need to ask her questions, too bad!</div>
   </div>;
     
+
+    /*
+    Regarding graph names:
+    Nomenclature of this A_B_C format is as follows:
+    A describes what the data is from. For example, "GraphMovie" means we are looking at a movie's Data. 
+    "GraphDate" is a date's data. "GraphArranged" means a large amount of data is arranged into some sort of
+    broad categories, like genres, or perhaps coutry of origin.
+    B is the specific thing being examined, like the particular movie or particular date.
+    C is timescale being examined.
+    */
 
     const GraphGenre_Horror_August = {  
       data:[{name:"The Nosferatu of Wall Street", sales:60}, 
@@ -521,13 +452,13 @@ const article8={
     };
 
 
-let preSortArticles=[article1, article2, article3, article4, article5, article6, article7, article8]
+let preSortArticles=[article1, article3, article4, article5, article6, article7, article8]
 
 
 export let  movieNameGraphPairs={"The Nosferatu of Wall Street":"GraphMovie_Nosferatu_August","Dead Universe":"GraphMovie_Dead_August","Empty Woods":"GraphMovie_Empty_August","The New Jersey Folding Chair Massacre":"GraphMovie_Jersey_August","Byrnadel's Squadron":"GraphMovie_Byrnadel_August","Explosion fest":"GraphMovie_Explosion_August","The Hero from the Forest":"GraphMovie_Hero_August","Large Robots":"GraphMovie_Robots_August","Dragons vs Dinosaurs":"GraphMovie_Dragons_August","Outcasts In Love":"GraphMovie_Outcasts_August","Serene Nights":"GraphMovie_Serene_August","Too Many Satyrs":"GraphMovie_Satyrs_August","Looking At Him":"GraphMovie_Looking_August","Seductive Merman":"GraphMovie_Merman_August","Rusty's Wedding":"GraphMovie_Rusty_August","Little Salad Spinners":"GraphMovie_Salad_August","One Shot To Go":"GraphMovie_OneShot_August","Meet The Gorgon Family":"GraphMovie_Gorgon_August","Steel and Light":"GraphMovie_Steel_August","Daniel Lighto":"GraphMovie_Daniel_August","The Baritones":"GraphMovie_Baritones_August","Inara's Mind":"GraphMovie_Inara_August"}
 export let Articles=preSortArticles.sort(function(b,a){return a.Date.getTime() - b.Date.getTime()});
-export let HTMLs={"HTML1":HTML1, "HTML2":HTML2, "HTML3":HTML3, "HTML4":HTML4, "HTML5":HTML5, "HTML6":HTML6, "HTML7":HTML7, "HTML8":HTML8, "HTML9":HTML9}
+export let HTMLs={"HTML1":HTML1, "HTML2":HTML2, "HTML4":HTML4, "HTML5":HTML5, "HTML6":HTML6, "HTML7":HTML7, "HTML8":HTML8, "HTML9":HTML9}
 export let Graphs={"GraphArranged_Genres_August":GraphArranged_Genres_August, "GraphGenre_Horror_August":GraphGenre_Horror_August,"GraphGenre_Action_August":GraphGenre_Action_August,"GraphGenre_Romance_August":GraphGenre_Romance_August,"GraphGenre_Comedy_August":GraphGenre_Comedy_August,"GraphGenre_Drama_August":GraphGenre_Drama_August,"GraphMovie_Nosferatu_August":GraphMovie_Nosferatu_August,"GraphMovie_Dead_August":GraphMovie_Dead_August,"GraphMovie_Empty_August":GraphMovie_Empty_August,"GraphMovie_Jersey_August":GraphMovie_Jersey_August,"GraphMovie_Byrnadel_August":GraphMovie_Byrnadel_August,"GraphMovie_Explosion_August":GraphMovie_Explosion_August,"GraphMovie_Hero_August":GraphMovie_Hero_August,"GraphMovie_Dragons_August":GraphMovie_Dragons_August,"GraphMovie_Robots_August":GraphMovie_Robots_August,"GraphMovie_Outcasts_August":GraphMovie_Outcasts_August,"GraphMovie_Serene_August":GraphMovie_Serene_August,"GraphMovie_Satyrs_August":GraphMovie_Satyrs_August,"GraphMovie_Looking_August":GraphMovie_Looking_August,"GraphMovie_Merman_August":GraphMovie_Merman_August,"GraphMovie_Rusty_August":GraphMovie_Rusty_August,"GraphMovie_Salad_August":GraphMovie_Salad_August,"GraphMovie_OneShot_August":GraphMovie_OneShot_August,"GraphMovie_Gorgon_August":GraphMovie_Gorgon_August,"GraphMovie_Steel_August":GraphMovie_Steel_August,"GraphMovie_Daniel_August":GraphMovie_Daniel_August,"GraphMovie_Baritones_August":GraphMovie_Baritones_August,"GraphMovie_Inara_August":GraphMovie_Inara_August,"GraphDate_Week1_August":GraphDate_Week1_August,"GraphDate_Week2_August":GraphDate_Week2_August,"GraphDate_Week3_August":GraphDate_Week3_August,"GraphDate_Week4_August":GraphDate_Week4_August}
-export let Forms=[Form1()]
+
 
 

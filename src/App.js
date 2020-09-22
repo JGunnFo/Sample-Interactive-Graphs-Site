@@ -42,7 +42,6 @@ function mapStateToProps(state) {
     articleList: state.articleList,
     currentArticle: state.currentArticle,
     graphList: state.graphList,
-    formList: state.formList,
     HTMLList: state.HTMLList,
     currentGraphs: state.currentGraphs
   };

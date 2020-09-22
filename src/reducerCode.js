@@ -11,6 +11,21 @@ import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTOR
 
 
 
+/*
+Currently, the data is based off an imported file rather than a database. 
+This will be shifted to a database in the future once additional features 
+and structures are committed to which will more strictly determine the shape 
+of the data and reducer logic.  For the first version, I opted for creating 
+the data quickly and not ending up overcommitted to a structure, especially 
+since longterm specialization will define needs more. 
+
+Questions like "Which complexities are stored in the reducer, 
+and which in the data?" depends on undetermined specifics, 
+so I avoided committing for now.
+*/
+
+
+
 function GenreClicked(barName){
   if (barName==="Horror"){
     return "GraphGenre_Horror_August";
@@ -30,9 +45,6 @@ function GenreClicked(barName){
 }
 
 function MovieClicked(barName){
-  console.log("the movie name is..")
-  console.log(barName)
-
   return movieNameGraphPairs[barName];
 }
 
@@ -58,22 +70,15 @@ export const reducer = produce((draft=initialStateReducer, action) => {
   switch (action.type) {
 
     case GOTO:
-      console.log("GOTO IS BEING RUN")
-      console.log(JSON.stringify(JSON.stringify(draft.Section)))
-      console.log(JSON.stringify(draft.currentArticle))
-      console.log(JSON.stringify(draft.currentGraphs))
       draft.section=action.payload;
       return draft;      
 
-    /*
-   draft.currentGraphs[action.payload[1]] simply is the number passed by the graph function's
-   dispatch, which indicates which chart slot is being used. The [0] after indicates the 
-   currently shown chart there, while [1] would be the origin chart that the article defaults to
-   for that slot.
-   So in each below, we check what the name of the current chart that was clicked on was,
-   then we change that chart slot based on which bar was clicked and what the graph was.
-    */
 
+
+
+
+
+    
 
 
     case GRAPHCLICK:
@@ -83,6 +88,9 @@ export const reducer = produce((draft=initialStateReducer, action) => {
       The former is the graph data currently being displayed, and the latter is the
       graph data that the graph first displays when the article is first clicked,
       since the data being displayed can change via interaciton.
+
+      action.payload[1] simply is the number passed by the graph function's
+      dispatch, which indicates which chart slot is being used. 
 
       This takes the graph number provided by the dispatch and uses it to check the
       correct slot, and then based on the graph in that slot, and based on the
@@ -95,18 +103,14 @@ export const reducer = produce((draft=initialStateReducer, action) => {
 
       if (draft.currentGraphs[action.payload[1]][0]==="GraphArranged_Genres_August" || draft.currentGraphs[action.payload[1]][0].slice(0,9)==="GraphDate" ){
         draft.currentGraphs[action.payload[1]][0]=GenreClicked(action.payload[0]["name"])
-        console.log(draft.currentGraphs[action.payload[1]][0])
         return draft;
 
       }else if (draft.currentGraphs[action.payload[1]][0].slice(0,10)==="GraphGenre"){
-        console.log("here we are")
         draft.currentGraphs[action.payload[1]][0]=MovieClicked(action.payload[0]["name"])
-        console.log(draft.currentGraphs[action.payload[1]][0])
         return draft;
 
       } else if (draft.currentGraphs[action.payload[1]][0].slice(0,10)==="GraphMovie"){
         draft.currentGraphs[action.payload[1]][0]=WeekClicked(action.payload[0]["name"])
-        console.log(draft.currentGraphs[action.payload[1]][0])
         return draft;
         
       } else {
@@ -116,7 +120,6 @@ export const reducer = produce((draft=initialStateReducer, action) => {
 
 
     case ARTICLECLICK:
-    console.log("ARTICLECLICK IS BEING RUN")
     draft.currentGraphs=[]
 
     
@@ -129,20 +132,11 @@ export const reducer = produce((draft=initialStateReducer, action) => {
 
     draft.currentArticle=action.payload;
     draft.section="Article";
-    console.log(JSON.stringify(draft.currentGraphs))
     return draft;
 
 
 
-
-    /*
-    make sure the HTML1,Graph1, etc list and the currentGraphs are *lists* [] 
-    and not objects {} so that order is preserved
-    */
-
     case CHARTORIGIN:
-      console.log("CHARTORIGIN IS BEING RUN")
-      console.log(action.payload)
     draft.currentGraphs[action.payload][0]=draft.currentGraphs[action.payload][1]
     return draft;
 

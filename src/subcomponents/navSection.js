@@ -36,7 +36,6 @@ export function navBar(props){
         )}
         else{
             return;
-            /* remember this way of exiting returns undefined, if that matters */
         }
     }
 

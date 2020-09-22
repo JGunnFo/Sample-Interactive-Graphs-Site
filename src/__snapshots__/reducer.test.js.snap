@@ -11,14 +11,6 @@ Object {
     "HTML2": <div>
       If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
     </div>,
-    "HTML3": <div>
-      <div>
-        In October we will be holding preview screenings for 6 different upcoming movies! 
-      </div>
-      <div>
-        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
-      </div>
-    </div>,
     "HTML4": <div>
       <div>
         On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
@@ -102,15 +94,6 @@ Object {
       "TitleText": "Interactive Data",
     },
     Object {
-      "Date": 2020-10-06T07:00:00.000Z,
-      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
-      "Sections": Array [
-        "HTML3",
-        "Form1",
-      ],
-      "TitleText": "Sign up for a special screening!",
-    },
-    Object {
       "Date": 2020-10-05T07:00:00.000Z,
       "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
       "Sections": Array [
@@ -169,83 +152,6 @@ Object {
       "GraphArranged_Genres_August",
       "GraphArranged_Genres_August",
     ],
-  ],
-  "formList": Array [
-    <Formik
-      initialValues={
-        Object {
-          "email": "",
-        }
-      }
-      onSubmit={[Function]}
-      validationSchema={
-        ObjectSchema {
-          "_blacklist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "_conditions": Array [],
-          "_defaultDefault": [Function],
-          "_deps": Array [],
-          "_excludedEdges": Array [],
-          "_exclusive": Object {},
-          "_mutate": undefined,
-          "_nodes": Array [
-            "email",
-          ],
-          "_options": Object {
-            "abortEarly": true,
-            "recursive": true,
-          },
-          "_type": "object",
-          "_typeError": [Function],
-          "_whitelist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "fields": Object {
-            "email": StringSchema {
-              "_blacklist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "_conditions": Array [],
-              "_deps": Array [],
-              "_exclusive": Object {
-                "email": false,
-                "required": true,
-              },
-              "_mutate": undefined,
-              "_options": Object {
-                "abortEarly": true,
-                "recursive": true,
-              },
-              "_type": "string",
-              "_typeError": [Function],
-              "_whitelist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "tests": Array [
-                [Function],
-                [Function],
-              ],
-              "transforms": Array [
-                [Function],
-              ],
-              "type": "string",
-            },
-          },
-          "tests": Array [],
-          "transforms": Array [
-            [Function],
-          ],
-          "type": "object",
-        }
-      }
-    >
-      [Function]
-    </Formik>,
   ],
   "graphList": Object {
     "GraphArranged_Genres_August": Object {
@@ -997,14 +903,6 @@ Object {
     "HTML2": <div>
       If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
     </div>,
-    "HTML3": <div>
-      <div>
-        In October we will be holding preview screenings for 6 different upcoming movies! 
-      </div>
-      <div>
-        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
-      </div>
-    </div>,
     "HTML4": <div>
       <div>
         On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
@@ -1088,15 +986,6 @@ Object {
       "TitleText": "Interactive Data",
     },
     Object {
-      "Date": 2020-10-06T07:00:00.000Z,
-      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
-      "Sections": Array [
-        "HTML3",
-        "Form1",
-      ],
-      "TitleText": "Sign up for a special screening!",
-    },
-    Object {
       "Date": 2020-10-05T07:00:00.000Z,
       "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
       "Sections": Array [
@@ -1152,7 +1041,7 @@ Object {
     "HTML5",
     "GraphDate_Week2_August",
     "GraphArranged_Genres_August",
-    "HTML3",
+    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
@@ -1167,83 +1056,6 @@ Object {
       "GraphMovie_Byrnadel_August",
       "GraphArranged_Genres_August",
     ],
-  ],
-  "formList": Array [
-    <Formik
-      initialValues={
-        Object {
-          "email": "",
-        }
-      }
-      onSubmit={[Function]}
-      validationSchema={
-        ObjectSchema {
-          "_blacklist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "_conditions": Array [],
-          "_defaultDefault": [Function],
-          "_deps": Array [],
-          "_excludedEdges": Array [],
-          "_exclusive": Object {},
-          "_mutate": undefined,
-          "_nodes": Array [
-            "email",
-          ],
-          "_options": Object {
-            "abortEarly": true,
-            "recursive": true,
-          },
-          "_type": "object",
-          "_typeError": [Function],
-          "_whitelist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "fields": Object {
-            "email": StringSchema {
-              "_blacklist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "_conditions": Array [],
-              "_deps": Array [],
-              "_exclusive": Object {
-                "email": false,
-                "required": true,
-              },
-              "_mutate": undefined,
-              "_options": Object {
-                "abortEarly": true,
-                "recursive": true,
-              },
-              "_type": "string",
-              "_typeError": [Function],
-              "_whitelist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "tests": Array [
-                [Function],
-                [Function],
-              ],
-              "transforms": Array [
-                [Function],
-              ],
-              "type": "string",
-            },
-          },
-          "tests": Array [],
-          "transforms": Array [
-            [Function],
-          ],
-          "type": "object",
-        }
-      }
-    >
-      [Function]
-    </Formik>,
   ],
   "graphList": Object {
     "GraphArranged_Genres_August": Object {
@@ -1995,14 +1807,6 @@ Object {
     "HTML2": <div>
       If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
     </div>,
-    "HTML3": <div>
-      <div>
-        In October we will be holding preview screenings for 6 different upcoming movies! 
-      </div>
-      <div>
-        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
-      </div>
-    </div>,
     "HTML4": <div>
       <div>
         On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
@@ -2086,15 +1890,6 @@ Object {
       "TitleText": "Interactive Data",
     },
     Object {
-      "Date": 2020-10-06T07:00:00.000Z,
-      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
-      "Sections": Array [
-        "HTML3",
-        "Form1",
-      ],
-      "TitleText": "Sign up for a special screening!",
-    },
-    Object {
       "Date": 2020-10-05T07:00:00.000Z,
       "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
       "Sections": Array [
@@ -2150,7 +1945,7 @@ Object {
     "HTML5",
     "GraphDate_Week2_August",
     "GraphArranged_Genres_August",
-    "HTML3",
+    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
@@ -2165,83 +1960,6 @@ Object {
       "GraphMovie_Byrnadel_August",
       "GraphArranged_Genres_August",
     ],
-  ],
-  "formList": Array [
-    <Formik
-      initialValues={
-        Object {
-          "email": "",
-        }
-      }
-      onSubmit={[Function]}
-      validationSchema={
-        ObjectSchema {
-          "_blacklist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "_conditions": Array [],
-          "_defaultDefault": [Function],
-          "_deps": Array [],
-          "_excludedEdges": Array [],
-          "_exclusive": Object {},
-          "_mutate": undefined,
-          "_nodes": Array [
-            "email",
-          ],
-          "_options": Object {
-            "abortEarly": true,
-            "recursive": true,
-          },
-          "_type": "object",
-          "_typeError": [Function],
-          "_whitelist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "fields": Object {
-            "email": StringSchema {
-              "_blacklist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "_conditions": Array [],
-              "_deps": Array [],
-              "_exclusive": Object {
-                "email": false,
-                "required": true,
-              },
-              "_mutate": undefined,
-              "_options": Object {
-                "abortEarly": true,
-                "recursive": true,
-              },
-              "_type": "string",
-              "_typeError": [Function],
-              "_whitelist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "tests": Array [
-                [Function],
-                [Function],
-              ],
-              "transforms": Array [
-                [Function],
-              ],
-              "type": "string",
-            },
-          },
-          "tests": Array [],
-          "transforms": Array [
-            [Function],
-          ],
-          "type": "object",
-        }
-      }
-    >
-      [Function]
-    </Formik>,
   ],
   "graphList": Object {
     "GraphArranged_Genres_August": Object {
@@ -2993,14 +2711,6 @@ Object {
     "HTML2": <div>
       If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
     </div>,
-    "HTML3": <div>
-      <div>
-        In October we will be holding preview screenings for 6 different upcoming movies! 
-      </div>
-      <div>
-        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
-      </div>
-    </div>,
     "HTML4": <div>
       <div>
         On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
@@ -3084,15 +2794,6 @@ Object {
       "TitleText": "Interactive Data",
     },
     Object {
-      "Date": 2020-10-06T07:00:00.000Z,
-      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
-      "Sections": Array [
-        "HTML3",
-        "Form1",
-      ],
-      "TitleText": "Sign up for a special screening!",
-    },
-    Object {
       "Date": 2020-10-05T07:00:00.000Z,
       "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
       "Sections": Array [
@@ -3148,7 +2849,7 @@ Object {
     "HTML5",
     "GraphDate_Week2_August",
     "GraphArranged_Genres_August",
-    "HTML3",
+    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
@@ -3163,83 +2864,6 @@ Object {
       "GraphMovie_Byrnadel_August",
       "GraphArranged_Genres_August",
     ],
-  ],
-  "formList": Array [
-    <Formik
-      initialValues={
-        Object {
-          "email": "",
-        }
-      }
-      onSubmit={[Function]}
-      validationSchema={
-        ObjectSchema {
-          "_blacklist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "_conditions": Array [],
-          "_defaultDefault": [Function],
-          "_deps": Array [],
-          "_excludedEdges": Array [],
-          "_exclusive": Object {},
-          "_mutate": undefined,
-          "_nodes": Array [
-            "email",
-          ],
-          "_options": Object {
-            "abortEarly": true,
-            "recursive": true,
-          },
-          "_type": "object",
-          "_typeError": [Function],
-          "_whitelist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "fields": Object {
-            "email": StringSchema {
-              "_blacklist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "_conditions": Array [],
-              "_deps": Array [],
-              "_exclusive": Object {
-                "email": false,
-                "required": true,
-              },
-              "_mutate": undefined,
-              "_options": Object {
-                "abortEarly": true,
-                "recursive": true,
-              },
-              "_type": "string",
-              "_typeError": [Function],
-              "_whitelist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "tests": Array [
-                [Function],
-                [Function],
-              ],
-              "transforms": Array [
-                [Function],
-              ],
-              "type": "string",
-            },
-          },
-          "tests": Array [],
-          "transforms": Array [
-            [Function],
-          ],
-          "type": "object",
-        }
-      }
-    >
-      [Function]
-    </Formik>,
   ],
   "graphList": Object {
     "GraphArranged_Genres_August": Object {
@@ -3991,14 +3615,6 @@ Object {
     "HTML2": <div>
       If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
     </div>,
-    "HTML3": <div>
-      <div>
-        In October we will be holding preview screenings for 6 different upcoming movies! 
-      </div>
-      <div>
-        Fill out the form below with the absolutely not fake email that you use for your Fictional Movie Business account, your favorite movie genre, and your favorite movie snack, and we'll get back to you soon!
-      </div>
-    </div>,
     "HTML4": <div>
       <div>
         On Saturday, September 5th, all tickets will be 30% off! That applies to both booking in advance, day-of purchases, and digital screenings! The only thing you have to do is show up and buy at least 2 buckets of popcorn.
@@ -4082,15 +3698,6 @@ Object {
       "TitleText": "Interactive Data",
     },
     Object {
-      "Date": 2020-10-06T07:00:00.000Z,
-      "PreviewText": "If you fill out the form, you'll get to attend a secret preview screening of an upcoming movie!",
-      "Sections": Array [
-        "HTML3",
-        "Form1",
-      ],
-      "TitleText": "Sign up for a special screening!",
-    },
-    Object {
       "Date": 2020-10-05T07:00:00.000Z,
       "PreviewText": "If you want to bring your alpaca along, be sure to read these rules to save your movie night!",
       "Sections": Array [
@@ -4146,7 +3753,7 @@ Object {
     "HTML5",
     "GraphDate_Week2_August",
     "GraphArranged_Genres_August",
-    "HTML3",
+    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
@@ -4161,83 +3768,6 @@ Object {
       "GraphMovie_Byrnadel_August",
       "GraphArranged_Genres_August",
     ],
-  ],
-  "formList": Array [
-    <Formik
-      initialValues={
-        Object {
-          "email": "",
-        }
-      }
-      onSubmit={[Function]}
-      validationSchema={
-        ObjectSchema {
-          "_blacklist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "_conditions": Array [],
-          "_defaultDefault": [Function],
-          "_deps": Array [],
-          "_excludedEdges": Array [],
-          "_exclusive": Object {},
-          "_mutate": undefined,
-          "_nodes": Array [
-            "email",
-          ],
-          "_options": Object {
-            "abortEarly": true,
-            "recursive": true,
-          },
-          "_type": "object",
-          "_typeError": [Function],
-          "_whitelist": RefSet {
-            "list": Set {},
-            "refs": Map {},
-          },
-          "fields": Object {
-            "email": StringSchema {
-              "_blacklist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "_conditions": Array [],
-              "_deps": Array [],
-              "_exclusive": Object {
-                "email": false,
-                "required": true,
-              },
-              "_mutate": undefined,
-              "_options": Object {
-                "abortEarly": true,
-                "recursive": true,
-              },
-              "_type": "string",
-              "_typeError": [Function],
-              "_whitelist": RefSet {
-                "list": Set {},
-                "refs": Map {},
-              },
-              "tests": Array [
-                [Function],
-                [Function],
-              ],
-              "transforms": Array [
-                [Function],
-              ],
-              "type": "string",
-            },
-          },
-          "tests": Array [],
-          "transforms": Array [
-            [Function],
-          ],
-          "type": "object",
-        }
-      }
-    >
-      [Function]
-    </Formik>,
   ],
   "graphList": Object {
     "GraphArranged_Genres_August": Object {
