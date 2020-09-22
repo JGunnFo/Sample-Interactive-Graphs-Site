@@ -20,10 +20,10 @@ export const initialStateReducer={
     section: "Article",
     transition:false,
     articleList:Articles,
-    currentArticle:["HTML1", "GraphArranged_Genres_August", "HTML2", "HTML5", "GraphDate_Week2_August", "GraphArranged_Genres_August", "HTML6"],
+    currentArticle:["HTML1", "GraphArranged_Genres_August", "HTML2"],
     graphList: Graphs,
     HTMLList: HTMLs,
-    currentGraphs: [ ["GraphGenre_Action_August","GraphArranged_Genres_August"], ["GraphArranged_Genres_August","GraphDate_Week3_August"], ["GraphMovie_Byrnadel_August","GraphArranged_Genres_August"]]
+    currentGraphs: [ ["GraphArranged_Genres_August","GraphArranged_Genres_August"]]
     /* current, origin. 0 is current, 1 is origin*/
   };
 

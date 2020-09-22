@@ -30,7 +30,7 @@ const GraphArranged_Genres_August = {
   key: "sales" 
 };
 
-const HTML2 = <div>If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!</div>
+const HTML2 = <div>Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!</div>
 
 
 

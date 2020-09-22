@@ -1,6 +1,6 @@
 {
-  "short_name": "NAME",
-  "name": "NAAAME",
+  "short_name": "Sample Site",
+  "name": "Sample Site by Jeffrey Gunn",
   "icons": [
     {
       "src": "favicon.ico",

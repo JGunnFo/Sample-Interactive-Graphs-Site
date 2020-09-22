@@ -9,7 +9,7 @@ Object {
       Click on any of the bars in the graph to view more of the data!
     </div>,
     "HTML2": <div>
-      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+      Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!
     </div>,
     "HTML4": <div>
       <div>
@@ -892,7 +892,7 @@ Object {
 }
 `;
 
-exports[`todos reducer should handle CHARTORIGIN 1 1`] = `
+exports[`todos reducer should handle CHARTORIGIN 0 1`] = `
 Object {
   "HTMLList": Object {
     "HTML1": <div
@@ -901,7 +901,7 @@ Object {
       Click on any of the bars in the graph to view more of the data!
     </div>,
     "HTML2": <div>
-      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+      Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!
     </div>,
     "HTML4": <div>
       <div>
@@ -1038,22 +1038,10 @@ Object {
     "HTML1",
     "GraphArranged_Genres_August",
     "HTML2",
-    "HTML5",
-    "GraphDate_Week2_August",
-    "GraphArranged_Genres_August",
-    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
-      "GraphGenre_Action_August",
       "GraphArranged_Genres_August",
-    ],
-    Array [
-      "GraphDate_Week3_August",
-      "GraphDate_Week3_August",
-    ],
-    Array [
-      "GraphMovie_Byrnadel_August",
       "GraphArranged_Genres_August",
     ],
   ],
@@ -1805,7 +1793,7 @@ Object {
       Click on any of the bars in the graph to view more of the data!
     </div>,
     "HTML2": <div>
-      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+      Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!
     </div>,
     "HTML4": <div>
       <div>
@@ -1942,22 +1930,10 @@ Object {
     "HTML1",
     "GraphArranged_Genres_August",
     "HTML2",
-    "HTML5",
-    "GraphDate_Week2_August",
-    "GraphArranged_Genres_August",
-    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
-      "GraphGenre_Action_August",
       "GraphArranged_Genres_August",
-    ],
-    Array [
-      "GraphArranged_Genres_August",
-      "GraphDate_Week3_August",
-    ],
-    Array [
-      "GraphMovie_Byrnadel_August",
       "GraphArranged_Genres_August",
     ],
   ],
@@ -2709,7 +2685,7 @@ Object {
       Click on any of the bars in the graph to view more of the data!
     </div>,
     "HTML2": <div>
-      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+      Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!
     </div>,
     "HTML4": <div>
       <div>
@@ -2846,22 +2822,10 @@ Object {
     "HTML1",
     "GraphArranged_Genres_August",
     "HTML2",
-    "HTML5",
-    "GraphDate_Week2_August",
-    "GraphArranged_Genres_August",
-    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
-      "GraphMovie_Byrnadel_August",
-      "GraphArranged_Genres_August",
-    ],
-    Array [
-      "GraphArranged_Genres_August",
-      "GraphDate_Week3_August",
-    ],
-    Array [
-      "GraphMovie_Byrnadel_August",
+      undefined,
       "GraphArranged_Genres_August",
     ],
   ],
@@ -3613,7 +3577,7 @@ Object {
       Click on any of the bars in the graph to view more of the data!
     </div>,
     "HTML2": <div>
-      If you're sad to see your favorite genre did not do as well as you'd like, you know what to do: Give us more money!
+      Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!
     </div>,
     "HTML4": <div>
       <div>
@@ -3750,22 +3714,10 @@ Object {
     "HTML1",
     "GraphArranged_Genres_August",
     "HTML2",
-    "HTML5",
-    "GraphDate_Week2_August",
-    "GraphArranged_Genres_August",
-    "HTML6",
   ],
   "currentGraphs": Array [
     Array [
-      "GraphGenre_Action_August",
       "GraphArranged_Genres_August",
-    ],
-    Array [
-      "GraphArranged_Genres_August",
-      "GraphDate_Week3_August",
-    ],
-    Array [
-      "GraphMovie_Byrnadel_August",
       "GraphArranged_Genres_August",
     ],
   ],

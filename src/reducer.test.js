@@ -50,12 +50,12 @@ describe('todos reducer', () => {
 
 
 
-    it('should handle CHARTORIGIN 1', () => {
+    it('should handle CHARTORIGIN 0', () => {
       expect(
         reducer(initialStateReducer,
         {
           type: CHARTORIGIN,
-          payload: 1
+          payload: 0
         })
       ).toMatchSnapshot()
     })
