@@ -13,8 +13,11 @@ The data used for the graphs is currently not internally consistent, because it 
 
 
 Upcoming improvements include:
+
 -Finetuning graph appearance for mobile.
+
 -Adding forms.
+
 -Adding features to make it more convenient to browse large numbers of news articles.
 
 
