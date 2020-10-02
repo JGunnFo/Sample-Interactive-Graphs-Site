@@ -30,7 +30,7 @@ const GraphArranged_Genres_August = {
   key: "sales" 
 };
 
-const HTML2 = <div>Of course, it all comes down to the individual movies, so next month could be entirely different!</div>
+const HTML2 = <div>Don't forget to click the about page to learn more about this website!</div>
 
 
 
