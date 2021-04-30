@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import { connect } from "react-redux";
 import { GOTO, goTo} from "./Actions";
-import { mainContentFrame } from "./subcomponents/contentSelection";
-import { navBar } from "./subcomponents/navSection";
+import { MainContentFrame } from "./subcomponents/contentSelection";
+import { NavBar } from "./subcomponents/navSection";
 
 
 
@@ -11,13 +11,21 @@ class TopComponent extends React.Component {
 
   renderNav(){
     return(
-      <div>{navBar(this.props)}</div>
+      <div>
+        <NavBar
+        props={this.props}
+        />
+      </div>
     )
   }
 
   renderContent() {
     return(
-      <div>{mainContentFrame(this.props)}</div>
+      <div>
+        <MainContentFrame
+        props={this.props}
+        />
+      </div>
     )
   }
 

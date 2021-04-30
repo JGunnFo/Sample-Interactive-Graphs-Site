@@ -5,20 +5,40 @@ import { GOTO, GoTo} from "../Actions";
 
 
 
-export function navBar(props){
+export function NavBar({props}){
     return(
       <div>
       <div className="Nav-Flex-Parent" role="navigation">
-      <div>{navBarButton("News", props)}</div>
-      <div>{navBarButton("Article", props)}</div>
-      <div>{navBarButton("About", props)}</div>
-      <div>{navBarButton("Github", props)}</div>
+        <div>
+          <NavBarButton
+          passTo="News"
+          props={props}
+          />
+        </div>
+        <div>
+          <NavBarButton
+          passTo="Article"
+          props={props}
+          />
+        </div>
+        <div>
+          <NavBarButton
+          passTo="About"
+          props={props}
+          />
+        </div>
+        <div>
+          <NavBarButton
+          passTo="Github"
+          props={props}
+          />
+        </div>
       </div></div>
     );
   }
 
 
-  function navBarButton(passTo, props){
+function NavBarButton({passTo, props}){
 
     let navStyle
     if (props.section===passTo){

@@ -5,7 +5,7 @@ import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTOR
 
 
   
-export  function sectionAbout(props){
+export function SectionAbout({props}){
     return(
       <div className="Article-HTML-Segment">
         <div>This is a demonstratory fake business website made by Jeffrey Gunn, a React Redux web developer.</div>

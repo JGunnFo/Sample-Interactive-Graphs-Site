@@ -316,7 +316,7 @@ exports[`<App starting with Article Graph Set 1> renders correctly according to 
                   className="Article-HTML-Segment"
                 >
                   <div>
-                    Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!
+                    Don't forget to click the about page to learn more about this website!
                   </div>
                 </div>
                 <div>
@@ -1181,7 +1181,7 @@ exports[`<App with its actual starting state> renders correctly according to sna
                   className="Article-HTML-Segment"
                 >
                   <div>
-                    Of course, it all comes down to the individual movies - just look at how "Seductive Merman" dominated romance sales this month - so next month could be entirely different!
+                    Don't forget to click the about page to learn more about this website!
                   </div>
                 </div>
               </div>

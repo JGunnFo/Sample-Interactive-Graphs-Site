@@ -4,26 +4,34 @@ import { connect } from "react-redux";
 import { GOTO, GoTo, ARTICLECLICK, ArticleClick, GRAPHCLICK, GraphClick, CHARTORIGIN, ChartOrigin} from "../Actions";
 
     
-export  function sectionNews(props){
+export  function SectionNews({props}){
     return(
       <div>
-          <div>{LoopOverNews(props)}</div>
+          <div>
+          <LoopOverNews
+          props={props}
+          />
+          </div>
       </div>
     );
   }
   
-  function LoopOverNews(props){
+function LoopOverNews({props}){
     return(
       <div className="News-Grid-Parent">
         {props.articleList.map((preview, index) =>
-          (RenderSquares(preview, props, index))
-          )}
+          <RenderSquares
+          passedPreview={preview}
+          props={props}
+          index={index}
+          />
+        )}
       </div>
     )
 
   }
     
-  function RenderSquares(passedPreview, props, index){
+function RenderSquares({passedPreview, props, index}){
     return(
       <div key={index}>
       <button className="Button-Unset News-Square-Button" onClick={() => {props.dispatch(ArticleClick(passedPreview["Sections"]))}}>
