@@ -14,12 +14,16 @@ This is a sample React Redux website that features:
 The data used for the graphs is currently not internally consistent, because it is a quick sample. This will change when the data structure and flow is reshaped to optimize for future features, once those features are selected and committed to.
 
 
-Upcoming improvements include:
+Possible future improvements include:
 
 -Finetuning graph appearance for mobile.
 
 -Adding forms.
 
 -Adding features to make it more convenient to browse large numbers of news articles.
+
+-Animations.
+
+-Adjusting data design for different purposes.
 
 
